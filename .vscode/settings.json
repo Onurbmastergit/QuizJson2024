@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "QuizGame JSON.sln"
+    "dotnet.defaultSolution": "QuizJson.sln"
 }

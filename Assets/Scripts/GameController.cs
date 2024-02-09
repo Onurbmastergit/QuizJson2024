@@ -52,7 +52,7 @@ public class GameController : MonoBehaviour
         tempoRestante = rodadaAtual.limiteDeTempo;
 
         // Atualiza o temporizador na interface do usuário
-        UpdateTimer();
+        //UpdateTimer();
 
         // Inicializa a pontuação do jogador e o índice da pergunta
         playerScore = 0;
@@ -65,8 +65,17 @@ public class GameController : MonoBehaviour
         rodadaAtiva = true;
     }
 
-    // Método chamado a cada quadro
     void Update()
+    {
+        if (playerScore == 10)
+        {
+            EndRound();
+            
+        }
+    }
+
+    // Timer Adicionar TimerText se o cliente aceitar o timer
+   /* void Update()
     {
         // Verifica se a rodada está ativa
         if (rodadaAtiva)
@@ -83,6 +92,7 @@ public class GameController : MonoBehaviour
             }
         }
     }
+    */
 
     // Método para atualizar o temporizador na interface do usuário
     private void UpdateTimer()
