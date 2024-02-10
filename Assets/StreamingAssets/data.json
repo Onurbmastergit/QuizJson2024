@@ -1,1 +1,511 @@
-{"todasAsRodadas":[{"nomeDoTema":"Rodada 1","limiteDeTempo":60,"pontosPorAcerto":1,"perguntas":[{"textoDaPergunta":"Qual é o maior planeta do sistema solar?","respostas":[{"textoResposta":"Júpiter","estaCorreta":true},{"textoResposta":"Terra","estaCorreta":false},{"textoResposta":"Vênus","estaCorreta":false},{"textoResposta":"Marte","estaCorreta":false}]},{"textoDaPergunta":"Quem foi o primeiro presidente dos Estados Unidos?","respostas":[{"textoResposta":"George Washington","estaCorreta":true},{"textoResposta":"Thomas Jefferson","estaCorreta":false},{"textoResposta":"Abraham Lincoln","estaCorreta":false},{"textoResposta":"John Adams","estaCorreta":false}]},{"textoDaPergunta":"Qual é o processo pelo qual as plantas produzem seu próprio alimento?","respostas":[{"textoResposta":"Fotossíntese","estaCorreta":true},{"textoResposta":"Respiração","estaCorreta":false},{"textoResposta":"Transpiração","estaCorreta":false},{"textoResposta":"Digestão","estaCorreta":false}]},{"textoDaPergunta":"Quem escreveu 'Romeu e Julieta'?","respostas":[{"textoResposta":"William Shakespeare","estaCorreta":true},{"textoResposta":"Charles Dickens","estaCorreta":false},{"textoResposta":"Jane Austen","estaCorreta":false},{"textoResposta":"Mark Twain","estaCorreta":false}]},{"textoDaPergunta":"Qual é o elemento químico mais abundante no universo?","respostas":[{"textoResposta":"Hidrogênio","estaCorreta":true},{"textoResposta":"Oxigênio","estaCorreta":false},{"textoResposta":"Carbono","estaCorreta":false},{"textoResposta":"Nitrogênio","estaCorreta":false}]},{"textoDaPergunta":"Quem pintou a 'Mona Lisa'?","respostas":[{"textoResposta":"Leonardo da Vinci","estaCorreta":true},{"textoResposta":"Vincent van Gogh","estaCorreta":false},{"textoResposta":"Pablo Picasso","estaCorreta":false},{"textoResposta":"Michelangelo","estaCorreta":false}]},{"textoDaPergunta":"Qual é a capital da França?","respostas":[{"textoResposta":"Paris","estaCorreta":true},{"textoResposta":"Londres","estaCorreta":false},{"textoResposta":"Roma","estaCorreta":false},{"textoResposta":"Berlim","estaCorreta":false}]},{"textoDaPergunta":"Quem foi o primeiro ser humano a pisar na lua?","respostas":[{"textoResposta":"Neil Armstrong","estaCorreta":true},{"textoResposta":"Buzz Aldrin","estaCorreta":false},{"textoResposta":"Yuri Gagarin","estaCorreta":false},{"textoResposta":"Alan Shepard","estaCorreta":false}]},{"textoDaPergunta":"Qual é o maior oceano do mundo?","respostas":[{"textoResposta":"Oceano Pacífico","estaCorreta":true},{"textoResposta":"Oceano Atlântico","estaCorreta":false},{"textoResposta":"Oceano Índico","estaCorreta":false},{"textoResposta":"Oceano Antártico","estaCorreta":false}]},{"textoDaPergunta":"Quem escreveu 'O Senhor dos Anéis'?","respostas":[{"textoResposta":"J.R.R. Tolkien","estaCorreta":true},{"textoResposta":"C.S. Lewis","estaCorreta":false},{"textoResposta":"J.K. Rowling","estaCorreta":false},{"textoResposta":"George R.R. Martin","estaCorreta":false}]}]}]}
+{
+  "todasAsRodadas": [
+    {
+      "nomeDoTema": "Rodada 1",
+      "limiteDeTempo": 60,
+      "pontosPorAcerto": 1,
+      "perguntas": [
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 01] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 02] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 03] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 04] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 05] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 06] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 07] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 08] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 09] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 10] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 11] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 12] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 13] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 14] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 15] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 16] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 17] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 18] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 19] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        },
+        {
+          "textoDaPergunta": "[Pergunta da lista JSON - 20] Pergunta?",
+          "respostas": [
+            {
+              "textoResposta": "Resposta Correta",
+              "estaCorreta": true
+            },
+            {
+              "textoResposta": "Opção Errada 1",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 2",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 3",
+              "estaCorreta": false
+            },
+            {
+              "textoResposta": "Opção Errada 4",
+              "estaCorreta": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

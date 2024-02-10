@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 
 // Classe que controla o fluxo do jogo
-public class GameController : MonoBehaviour
+public class CaseController : MonoBehaviour
 {
     // Referências aos elementos da interface do usuário
     public TextMeshProUGUI textoPergunta;
@@ -28,6 +28,8 @@ public class GameController : MonoBehaviour
     private QuestionData[] questionPool;
 
     // Variáveis para controle da rodada
+    private bool rodadaAtiva;
+    private float tempoRestante;
     private int questionIndex;
     private int playerScore;
 
@@ -46,6 +48,11 @@ public class GameController : MonoBehaviour
         rodadaAtual = dataController.GetCurrentRoundData();
         // Obtém a pool de perguntas da rodada atual
         questionPool = rodadaAtual.perguntas;
+        // Inicializa o tempo restante com o limite de tempo da rodada atual
+        tempoRestante = rodadaAtual.limiteDeTempo;
+
+        // Atualiza o temporizador na interface do usuário
+        //UpdateTimer();
 
         // Inicializa a pontuação do jogador e o índice da pergunta
         playerScore = 0;
@@ -53,6 +60,9 @@ public class GameController : MonoBehaviour
 
         // Exibe a primeira pergunta
         ShowQuestion();
+
+        // Define a rodada como ativa
+        rodadaAtiva = true;
     }
 
     void Update()
@@ -60,7 +70,34 @@ public class GameController : MonoBehaviour
         if (playerScore == 10)
         {
             EndRound();
+
         }
+    }
+
+    // Timer Adicionar TimerText se o cliente aceitar o timer
+    /* void Update()
+     {
+         // Verifica se a rodada está ativa
+         if (rodadaAtiva)
+         {
+             // Atualiza o tempo restante
+             tempoRestante -= Time.deltaTime;
+             UpdateTimer();
+
+             // Verifica se o tempo acabou
+             if (tempoRestante <= 0)
+             {
+                 // Finaliza a rodada
+                 EndRound();    
+             }
+         }
+     }
+     */
+
+    // Método para atualizar o temporizador na interface do usuário
+    private void UpdateTimer()
+    {
+        textoTimer.text = "Timer : " + Mathf.Round(tempoRestante).ToString();
     }
 
     // Método para exibir a próxima pergunta
@@ -140,6 +177,9 @@ public class GameController : MonoBehaviour
     // Método para finalizar a rodada
     public void EndRound()
     {
+        // Define a rodada como não ativa
+        rodadaAtiva = false;
+
         // Salva a pontuação mais alta do jogador
         dataController.EnviarNovoHighScore(playerScore);
         // Atualiza o texto de pontuação mais alta na interface do usuário
@@ -147,6 +187,7 @@ public class GameController : MonoBehaviour
 
         // Desativa o painel de perguntas e ativa o painel de fim da rodada
         painelDePerguntas.SetActive(false);
+        painelFimRodada.SetActive(true);
     }
 
     // Método para retornar ao menu principal
