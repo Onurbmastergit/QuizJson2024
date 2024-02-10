@@ -7,10 +7,18 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    public GameObject interfaceBackground;
+
     public GameObject menuDica;
     public GameObject menuCaso;
     public GameObject menuVoltar;
     public GameObject menuPerguntas;
+
+    public GameObject buttonDicas;
+    public GameObject buttonCaso;
+    public GameObject buttonVoltar;
+
+    public GameObject responderCaso;
 
     public int playerScore;
 
@@ -74,11 +82,15 @@ public class GameManager : MonoBehaviour
         if (menuDica.activeSelf)
         {
             isMenuOpen = false;
+            interfaceBackground.SetActive(false);
+
             menuDica.SetActive(false);
             return;
         }
 
         isMenuOpen = true;
+        interfaceBackground.SetActive(true);
+
         menuDica.SetActive(true);
         menuCaso.SetActive(false);
         menuVoltar.SetActive(false);
@@ -88,11 +100,15 @@ public class GameManager : MonoBehaviour
         if (menuCaso.activeSelf)
         {
             isMenuOpen = false;
+            interfaceBackground.SetActive(false);
+
             menuCaso.SetActive(false);
             return;
         }
 
         isMenuOpen = true;
+        interfaceBackground.SetActive(true);
+
         menuDica.SetActive(false);
         menuCaso.SetActive(true);
         menuVoltar.SetActive(false);
@@ -102,14 +118,27 @@ public class GameManager : MonoBehaviour
         if (menuVoltar.activeSelf)
         {
             isMenuOpen = false;
+            interfaceBackground.SetActive(false);
+
             menuVoltar.SetActive(false);
             return;
         }
 
         isMenuOpen = true;
+        interfaceBackground.SetActive(true);
+
         menuDica.SetActive(false);
         menuCaso.SetActive(false);
         menuVoltar.SetActive(true);
+    }
+    public void ResponderCaso()
+    {
+        interfaceBackground.SetActive(true);
+        responderCaso.SetActive(true);
+
+        menuCaso.SetActive(false);
+        buttonCaso.SetActive(false);
+        buttonVoltar.SetActive(false);
     }
 
     public void ReturnToMenu()

@@ -122,6 +122,10 @@ public class GameController : MonoBehaviour
             playerScore += rodadaAtual.pontosPorAcerto;
             textoPontos.text = "Acertos : " + playerScore.ToString();
         }
+        if (!estaCorreto)
+        {
+            TestCase.comentario = true;
+        }
 
         // Verifica se há mais perguntas na pool
         if (questionPool.Length > questionIndex + 1)
@@ -144,8 +148,6 @@ public class GameController : MonoBehaviour
     {
         // Salva a pontuação mais alta do jogador
         dataController.EnviarNovoHighScore(playerScore);
-        // Atualiza o texto de pontuação mais alta na interface do usuário
-        highScoreText.text = "Perguntas Acertadas : " + dataController.GetHighScore().ToString();
 
         // Desativa o painel de perguntas e ativa o painel de fim da rodada
         painelDePerguntas.SetActive(false);
