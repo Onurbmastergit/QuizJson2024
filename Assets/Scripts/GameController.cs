@@ -57,8 +57,9 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if (playerScore == 10)
+        if (playerScore >= 10)
         {
+            playerScore = 0;
             EndRound();
         }
     }
@@ -142,13 +143,14 @@ public class GameController : MonoBehaviour
     // Método para finalizar a rodada
     public void EndRound()
     {
+         painelDePerguntas.SetActive(false);
         // Salva a pontuação mais alta do jogador
         dataController.EnviarNovoHighScore(playerScore);
         // Atualiza o texto de pontuação mais alta na interface do usuário
         highScoreText.text = "Perguntas Acertadas : " + dataController.GetHighScore().ToString();
 
         // Desativa o painel de perguntas e ativa o painel de fim da rodada
-        painelDePerguntas.SetActive(false);
+       
         GameManager.Instance.isMenuOpen = false;
         playerScore = 0;
         textoPontos.text = "Acertos : " + playerScore.ToString();
