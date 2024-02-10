@@ -7,6 +7,7 @@ public class CharacterMove : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public Transform moveTarget;
+    Vector3 lastTile;
 
     public LayerMask wallCollider;
 
@@ -27,6 +28,7 @@ public class CharacterMove : MonoBehaviour
             {
                 if(!Physics2D.OverlapCircle(moveTarget.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, wallCollider))
                 {
+                    lastTile = moveTarget.position;
                     moveTarget.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                 }
             }
@@ -35,6 +37,7 @@ public class CharacterMove : MonoBehaviour
             {
                 if (!Physics2D.OverlapCircle(moveTarget.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, wallCollider))
                 {
+                    lastTile = moveTarget.position;
                     moveTarget.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                 }
             }
@@ -43,7 +46,6 @@ public class CharacterMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        moveTarget.position -= new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0f);
-        transform.position = moveTarget.position;
+        moveTarget.position = lastTile;
     }
 }
