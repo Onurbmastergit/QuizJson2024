@@ -30,7 +30,6 @@ public class GameController : MonoBehaviour
     // Variáveis para controle da rodada
     private int questionIndex;
     private int playerScore;
-    
 
     // Lista de valores de índice já utilizados
     private List<int> usedValues = new List<int>();
@@ -56,14 +55,12 @@ public class GameController : MonoBehaviour
         ShowQuestion();
     }
 
- 
     void Update()
     {
         if (playerScore == 10)
         {
             EndRound();
         }
-       
     }
 
     // Método para exibir a próxima pergunta
