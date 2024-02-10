@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class GameManager : MonoBehaviour
         get { return !isMenuOpen; }
     }
 
+    public List<string> clueList = new List<string>();
+
     public LocationTrigger[] locations;
     public bool allVisited
     {
@@ -28,7 +31,7 @@ public class GameManager : MonoBehaviour
             bool allvisited = false;
             foreach (var location in locations)
             {
-                if (location.visited)
+                if (location.clueUnlocked)
                 {
                     allvisited = true;
                     continue;
@@ -49,7 +52,7 @@ public class GameManager : MonoBehaviour
             int numVisited = 0;
             foreach (var location in locations)
             {
-                if (location.visited)
+                if (location.clueUnlocked)
                 {
                     numVisited++;
                     continue;
@@ -107,5 +110,10 @@ public class GameManager : MonoBehaviour
         menuDica.SetActive(false);
         menuCaso.SetActive(false);
         menuVoltar.SetActive(true);
+    }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

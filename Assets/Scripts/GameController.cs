@@ -132,8 +132,10 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            // Se não, finaliza a rodada
-            EndRound();
+            // Se não, zera o contador para reutilizar as perguntas
+            questionIndex = 0;
+            usedValues.Clear();
+            ShowQuestion();
         }
     }
 
@@ -147,11 +149,8 @@ public class GameController : MonoBehaviour
 
         // Desativa o painel de perguntas e ativa o painel de fim da rodada
         painelDePerguntas.SetActive(false);
-    }
-
-    // Método para retornar ao menu principal
-    public void ReturnToMenu()
-    {
-        SceneManager.LoadScene("Menu");
+        GameManager.Instance.isMenuOpen = false;
+        playerScore = 0;
+        textoPontos.text = "Acertos : " + playerScore.ToString();
     }
 }

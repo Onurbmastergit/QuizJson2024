@@ -26,14 +26,17 @@ public enum locationNames
 public class LocationTrigger : MonoBehaviour
 {
     public locationNames ln;
-    public bool visited = false;
+    public bool clueUnlocked = false;
     public GameObject alert;
+
+    public string clue;
+    public TextMeshProUGUI clueText;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log($"Entrando no {ln}");
 
-        if (visited == true) return;
+        if (clueUnlocked == true) return;
         else QuestionTrigger();
     }
 
@@ -43,9 +46,17 @@ public class LocationTrigger : MonoBehaviour
         GameManager.Instance.isMenuOpen = true;
         GameManager.Instance.playerScore = 0;
 
-        visited = true;
-        alert.SetActive(false);
-        Debug.Log("===== Trigger: RESPONDA CORRETAMENTE 10 PERGUNTAS =====");
+        clueUnlocked = true;
+
+        if (clueUnlocked)
+        {
+            alert.SetActive(false);
+
+            clue = $"Pista {ln} desbloqueada";
+            GameManager.Instance.clueList.Add(clue);
+            clueText.text = string.Join("\n", GameManager.Instance.clueList);
+            Debug.Log($"===== Trigger: PISTA {ln} DESBLOQUEADA =====");
+        }
 
         if (GameManager.Instance.unlockResolution)
         {
