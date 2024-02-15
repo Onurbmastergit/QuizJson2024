@@ -15,7 +15,9 @@ public class GameController : MonoBehaviour
     public TextMeshProUGUI highScoreText;
     public SimpleObjectPool answerButtonObjectPool;
     public Transform answerButtonParent;
+
     public GameObject painelDePerguntas;
+    public GameObject painelPistaRecolhida;
     public GameObject painelFimRodada;
 
     // Referência ao controlador de dados
@@ -151,7 +153,7 @@ public class GameController : MonoBehaviour
 
         // Desativa o painel de perguntas e ativa o painel de fim da rodada
         painelDePerguntas.SetActive(false);
-        GameManager.Instance.isMenuOpen = false;
+        painelPistaRecolhida.SetActive(true);
         playerScore = 0;
         textoPontos.text = "Acertos : " + playerScore.ToString();
     }

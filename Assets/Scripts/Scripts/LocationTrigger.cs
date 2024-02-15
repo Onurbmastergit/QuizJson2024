@@ -1,18 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using static JsonCasosReader;
 
 public enum locationNames
 {
     financeiro,
     ambulatorio,
-    blocoCirurgico,
-    postoDeEnfermagem,
+    bloco_cirurgico,
+    posto_de_enfermagem,
     laboratorio,
     oncologia,
     recepcao,
-    prontoSocorro,
+    pronto_socorro,
     lanchonete,
     uti,
     enfermaria,
@@ -20,31 +22,46 @@ public enum locationNames
     radiologia,
     farmacia,
     pediatria,
-    repousoMedico,
+    repouso_medico,
 }
 
 public class LocationTrigger : MonoBehaviour
 {
     public locationNames ln;
+
+    private JsonCasosReader jsonCasosReader;
+
     public bool clueUnlocked = false;
     public GameObject alert;
 
-    public string clue;
-    public TextMeshProUGUI clueText;
+    public TextMeshProUGUI pista;
+
+
+    void Start()
+    {
+        // Atribua o componente JsonCasosReader no Editor ou encontre-o dinamicamente
+        jsonCasosReader = FindObjectOfType<JsonCasosReader>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log($"Entrando no {ln}");
+        CaseManager.Instance.localAtual = ln;
+        Debug.Log($"Entrando no {ln} {CaseManager.Instance.localAtual}");
+        CaseManager.Instance.isMenuOpen = true;
+        PistaSelecionada();
 
-        if (clueUnlocked == true) return;
+        if (clueUnlocked == true)
+        {
+            CaseManager.Instance.painelPistaRecolhida.SetActive(true);
+        }
         else QuestionTrigger();
     }
 
     void QuestionTrigger()
     {
-        GameManager.Instance.menuPerguntas.SetActive(true);
-        GameManager.Instance.isMenuOpen = true;
-        GameManager.Instance.playerScore = 0;
+        CaseManager.Instance.painelPerguntas.SetActive(true);
+        CaseManager.Instance.isMenuOpen = true;
+        CaseManager.Instance.playerScore = 0;
 
         clueUnlocked = true;
 
@@ -52,20 +69,27 @@ public class LocationTrigger : MonoBehaviour
         {
             alert.SetActive(false);
 
-            clue = $"Pista {ln} desbloqueada";
-            GameManager.Instance.clueList.Add(clue);
-            clueText.text = string.Join("\n", GameManager.Instance.clueList);
             Debug.Log($"===== Trigger: PISTA {ln} DESBLOQUEADA =====");
         }
 
-        if (GameManager.Instance.unlockResolution)
+        if (CaseManager.Instance.unlockResolution)
         {
             Debug.Log("===== Trigger: LIBERA O CASO FINAL =====");
         }
 
-        if (GameManager.Instance.allVisited)
+        if (CaseManager.Instance.allVisited)
         {
             Debug.Log("===== Trigger: TELA DE CASO FINAL =====");
         }
+    }
+
+    void PistaSelecionada()
+    {
+        int casoSelecionado = GameManager.Instance.casoSelecionado;
+        locationNames localAtual = CaseManager.Instance.localAtual;
+
+        var casoAtual = jsonCasosReader.listaCasos[casoSelecionado];
+
+        pista.text = casoAtual.pistas[localAtual.ToString()];
     }
 }

@@ -1,0 +1,92 @@
+{
+  "caso0": {
+    "nome_do_caso": "Caso 0",
+    "pergunta": "Descrição do Caso0 a ser resolvido arquivoJson",
+    "resposta_correta": 0,
+    "opcoes": [
+      "Alternativa A arquivoJson",
+      "Alternativa B arquivoJson",
+      "Alternativa C arquivoJson",
+      "Alternativa D arquivoJson",
+      "Alternativa E arquivoJson"
+    ],
+    "pistas": {
+      "financeiro": "Pista [Caso0] contida no Financeiro arquivoJson",
+      "ambulatorio": "Pista [Caso0] contida no Ambulatório arquivoJson",
+      "bloco_cirurgico": "Pista [Caso0] contida no Bloco Cirúrgico arquivoJson",
+      "posto_de_enfermagem": "Pista [Caso0] contida na Enfermagem arquivoJson",
+      "laboratorio": "Pista [Caso0] contida no Laboratório arquivoJson",
+      "oncologia": "Pista [Caso0] contida na Oncologia arquivoJson",
+      "recepcao": "Pista [Caso0] contida na Recepção arquivoJson",
+      "pronto_socorro": "Pista [Caso0] contida no Pronto Socorro arquivoJson",
+      "lanchonete": "Pista [Caso0] contida na Lanchonete arquivoJson",
+      "uti": "Pista [Caso0] contida na UTI arquivoJson",
+      "enfermaria": "Pista [Caso0] contida na Enfermaria arquivoJson",
+      "diretoria": "Pista [Caso0] contida na Diretoria arquivoJson",
+      "radiologia": "Pista [Caso0] contida na Radiologia arquivoJson",
+      "farmacia": "Pista [Caso0] contida na Farmácia arquivoJson",
+      "pediatria": "Pista [Caso0] contida na Pediatria arquivoJson",
+      "repouso_medico": "Pista [Caso0] contida no Repouso Médico arquivoJson"
+    }
+  },
+  "caso1": {
+    "nome_do_caso": "Caso 1",
+    "pergunta": "Descrição do Caso1 a ser resolvido arquivoJson",
+    "resposta_correta": 0,
+    "opcoes": [
+      "Alternativa A arquivoJson",
+      "Alternativa B arquivoJson",
+      "Alternativa C arquivoJson",
+      "Alternativa D arquivoJson",
+      "Alternativa E arquivoJson"
+    ],
+    "pistas": {
+      "financeiro": "Pista [Caso1] contida no Financeiro arquivoJson",
+      "ambulatorio": "Pista [Caso1] contida no Ambulatório arquivoJson",
+      "bloco_cirurgico": "Pista [Caso1] contida no Bloco Cirúrgico arquivoJson",
+      "posto_de_enfermagem": "Pista [Caso1] contida na Enfermagem arquivoJson",
+      "laboratorio": "Pista [Caso1] contida no Laboratório arquivoJson",
+      "oncologia": "Pista [Caso1] contida na Oncologia arquivoJson",
+      "recepcao": "Pista [Caso1] contida na Recepção arquivoJson",
+      "pronto_socorro": "Pista [Caso1] contida no Pronto Socorro arquivoJson",
+      "lanchonete": "Pista [Caso1] contida na Lanchonete arquivoJson",
+      "uti": "Pista [Caso1] contida na UTI arquivoJson",
+      "enfermaria": "Pista [Caso1] contida na Enfermaria arquivoJson",
+      "diretoria": "Pista [Caso1] contida na Diretoria arquivoJson",
+      "radiologia": "Pista [Caso1] contida na Radiologia arquivoJson",
+      "farmacia": "Pista [Caso1] contida na Farmácia arquivoJson",
+      "pediatria": "Pista [Caso1] contida na Pediatria arquivoJson",
+      "repouso_medico": "Pista [Caso1] contida no Repouso Médico arquivoJson"
+    }
+  },
+  "caso2": {
+    "nome_do_caso": "Caso 2",
+    "pergunta": "Descrição do Caso2 a ser resolvido arquivoJson",
+    "resposta_correta": 0,
+    "opcoes": [
+      "Alternativa A arquivoJson",
+      "Alternativa B arquivoJson",
+      "Alternativa C arquivoJson",
+      "Alternativa D arquivoJson",
+      "Alternativa E arquivoJson"
+    ],
+    "pistas": {
+      "financeiro": "Pista [Caso2] contida no Financeiro arquivoJson",
+      "ambulatorio": "Pista [Caso2] contida no Ambulatório arquivoJson",
+      "bloco_cirurgico": "Pista [Caso2] contida no Bloco Cirúrgico arquivoJson",
+      "posto_de_enfermagem": "Pista [Caso2] contida na Enfermagem arquivoJson",
+      "laboratorio": "Pista [Caso2] contida no Laboratório arquivoJson",
+      "oncologia": "Pista [Caso2] contida na Oncologia arquivoJson",
+      "recepcao": "Pista [Caso2] contida na Recepção arquivoJson",
+      "pronto_socorro": "Pista [Caso2] contida no Pronto Socorro arquivoJson",
+      "lanchonete": "Pista [Caso2] contida na Lanchonete arquivoJson",
+      "uti": "Pista [Caso2] contida na UTI arquivoJson",
+      "enfermaria": "Pista [Caso2] contida na Enfermaria arquivoJson",
+      "diretoria": "Pista [Caso2] contida na Diretoria arquivoJson",
+      "radiologia": "Pista [Caso2] contida na Radiologia arquivoJson",
+      "farmacia": "Pista [Caso2] contida na Farmácia arquivoJson",
+      "pediatria": "Pista [Caso2] contida na Pediatria arquivoJson",
+      "repouso_medico": "Pista [Caso2] contida no Repouso Médico arquivoJson"
+    }
+  }
+}
