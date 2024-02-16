@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using TMPro;
 using UnityEngine;
 using static JsonCasosReader;
@@ -35,6 +36,27 @@ public class LocationTrigger : MonoBehaviour
     public GameObject alert;
 
     public TextMeshProUGUI pista;
+    public TextMeshProUGUI local;
+
+    List<string> nomeLocais = new List<string>()
+    {
+        "Financeiro",
+        "Ambulatório",
+        "Bloco Cirúrgico",
+        "Posto de Enfermagem",
+        "Laboratório",
+        "Oncologia",
+        "Recepção",
+        "Pronto Socorro",
+        "Lanchonete",
+        "UTI",
+        "Enfermaria",
+        "Diretoria",
+        "Radiologia",
+        "Farmácia",
+        "Pediatria",
+        "Repouso Médico"
+    };
 
 
     void Start()
@@ -48,7 +70,7 @@ public class LocationTrigger : MonoBehaviour
         CaseManager.Instance.localAtual = ln;
         Debug.Log($"Entrando no {ln} {CaseManager.Instance.localAtual}");
         CaseManager.Instance.isMenuOpen = true;
-        PistaSelecionada();
+        PistaSelecionadaLT();
 
         if (clueUnlocked == true)
         {
@@ -64,6 +86,7 @@ public class LocationTrigger : MonoBehaviour
         CaseManager.Instance.playerScore = 0;
 
         clueUnlocked = true;
+        CaseManager.Instance.pistasDebloqueadas.Add(ln.ToString());
 
         if (clueUnlocked)
         {
@@ -83,7 +106,7 @@ public class LocationTrigger : MonoBehaviour
         }
     }
 
-    void PistaSelecionada()
+    public void PistaSelecionadaLT()
     {
         int casoSelecionado = GameManager.Instance.casoSelecionado;
         locationNames localAtual = CaseManager.Instance.localAtual;
@@ -91,5 +114,7 @@ public class LocationTrigger : MonoBehaviour
         var casoAtual = jsonCasosReader.listaCasos[casoSelecionado];
 
         pista.text = casoAtual.pistas[localAtual.ToString()];
+
+        local.text = nomeLocais[(int)localAtual];
     }
 }

@@ -22,6 +22,8 @@ public class CaseManager : MonoBehaviour
     public GameObject painelPistaRecolhida;
     public GameObject painelResponderCaso;
 
+    public List<string> pistasDebloqueadas = new List<string>();
+
 
     public bool gameStarted;
     public int playerScore;

@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 159870571}
   - component: {fileID: 159870570}
   m_Layer: 5
-  m_Name: Button Pista Ambulatorio
+  m_Name: ambulatorio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -796,7 +796,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 159870571}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &159870571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2103,7 +2127,7 @@ GameObject:
   - component: {fileID: 518325885}
   - component: {fileID: 518325884}
   m_Layer: 5
-  m_Name: Button Pista Farmacia
+  m_Name: farmacia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2172,7 +2196,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 518325885}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 13
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &518325885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2323,7 +2371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -303, y: 419}
+  m_AnchoredPosition: {x: -300, y: 419}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &589715597
@@ -3344,7 +3392,7 @@ GameObject:
   - component: {fileID: 844163104}
   - component: {fileID: 844163103}
   m_Layer: 5
-  m_Name: Button Pista ProntoSocorro
+  m_Name: pronto_socorro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3413,7 +3461,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 844163104}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &844163104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3731,7 +3803,7 @@ GameObject:
   - component: {fileID: 917720382}
   - component: {fileID: 917720381}
   m_Layer: 5
-  m_Name: Button Pista Recepcao
+  m_Name: recepcao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3800,7 +3872,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 917720382}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &917720382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3986,7 +4082,7 @@ GameObject:
   - component: {fileID: 976666416}
   - component: {fileID: 976666415}
   m_Layer: 5
-  m_Name: Button Pista Radiologia
+  m_Name: radiologia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4055,7 +4151,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 976666416}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 12
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &976666416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4107,7 +4227,7 @@ GameObject:
   - component: {fileID: 1035131140}
   - component: {fileID: 1035131139}
   m_Layer: 5
-  m_Name: Button Pista Enfermaria
+  m_Name: enfermaria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4176,7 +4296,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1035131140}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1035131140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4588,7 +4732,7 @@ GameObject:
   - component: {fileID: 1057080178}
   - component: {fileID: 1057080177}
   m_Layer: 5
-  m_Name: Contador Total (TMP)
+  m_Name: Contador Pistas (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4633,7 +4777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: / 16
+  m_text: 0 / 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4723,7 +4867,7 @@ GameObject:
   - component: {fileID: 1057331205}
   - component: {fileID: 1057331204}
   m_Layer: 5
-  m_Name: Button Pista BlocoCirurgico
+  m_Name: bloco_cirurgico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4792,7 +4936,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1057331205}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1057331205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5710,140 +5878,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213684470}
   m_CullTransparentMesh: 1
---- !u!1 &1357878523
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1357878524}
-  - component: {fileID: 1357878526}
-  - component: {fileID: 1357878525}
-  m_Layer: 5
-  m_Name: Contador Pistas (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1357878524
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357878523}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6365001, y: 1.636505, z: 1.6365}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 9029234576979738533}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -550, y: 460}
-  m_SizeDelta: {x: 400, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1357878525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357878523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 16
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 3862642753
-  m_fontColor: {r: 0.255, g: 0.25004855, b: 0.23024271, a: 0.9019608}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 876.4527, y: 0, z: -579.5877, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1357878526
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357878523}
-  m_CullTransparentMesh: 1
 --- !u!1 &1370096717
 GameObject:
   m_ObjectHideFlags: 0
@@ -6035,12 +6069,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-    in culpa qui officia deserunt mollit anim id est laborum.
+  m_text: "Descri\xE7\xE3o da Pista recolhida no Local Atual contida no arquivo JSON"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: bbc7d41becaf0d2408e2f9f0b81933d1, type: 2}
@@ -6761,7 +6790,7 @@ GameObject:
   - component: {fileID: 1643078007}
   - component: {fileID: 1643078006}
   m_Layer: 5
-  m_Name: Button Pista Oncologia
+  m_Name: oncologia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6830,7 +6859,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1643078007}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1643078007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7015,7 +7068,7 @@ GameObject:
   - component: {fileID: 1689470798}
   - component: {fileID: 1689470797}
   m_Layer: 5
-  m_Name: Button Pista RepousoMedico
+  m_Name: repouso_medico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7084,7 +7137,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1689470798}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 15
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1689470798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7136,7 +7213,7 @@ GameObject:
   - component: {fileID: 1741295319}
   - component: {fileID: 1741295318}
   m_Layer: 5
-  m_Name: Button Pista Diretoria
+  m_Name: diretoria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7205,7 +7282,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1741295319}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 11
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1741295319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7257,7 +7358,7 @@ GameObject:
   - component: {fileID: 1748320911}
   - component: {fileID: 1748320910}
   m_Layer: 5
-  m_Name: Button Pista Lanchonete
+  m_Name: lanchonete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7326,7 +7427,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1748320911}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1748320911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7714,7 +7839,7 @@ GameObject:
   - component: {fileID: 1847104159}
   - component: {fileID: 1847104158}
   m_Layer: 5
-  m_Name: Button Pista Pediatria
+  m_Name: pediatria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7783,7 +7908,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1847104159}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 14
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1847104159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7835,7 +7984,7 @@ GameObject:
   - component: {fileID: 1880333842}
   - component: {fileID: 1880333841}
   m_Layer: 5
-  m_Name: Button Pista PostoDeEnfermagem
+  m_Name: posto_de_enfermagem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7904,7 +8053,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1880333842}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1880333842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7943,6 +8116,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880333839}
   m_CullTransparentMesh: 1
+--- !u!1 &1882075707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1882075710}
+  - component: {fileID: 1882075709}
+  - component: {fileID: 1882075708}
+  m_Layer: 5
+  m_Name: Text Local
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1882075708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882075707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Local Atual
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: bbc7d41becaf0d2408e2f9f0b81933d1, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4287980800
+  m_fontColor: {r: 0, g: 0.39635068, b: 0.5849056, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 55
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 55
+  m_fontStyle: 4
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: -26.94
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -270.46048, y: 0, z: -60.123177, w: -73.48381}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1882075709
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882075707}
+  m_CullTransparentMesh: 1
+--- !u!224 &1882075710
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882075707}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2030120907}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 300, y: 419}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1925933408
 GameObject:
   m_ObjectHideFlags: 0
@@ -8224,7 +8531,7 @@ GameObject:
   - component: {fileID: 1974462955}
   - component: {fileID: 1974462954}
   m_Layer: 5
-  m_Name: Button Pista Financeiro
+  m_Name: financeiro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8293,7 +8600,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1974462955}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1974462955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8408,6 +8739,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 589715596}
+  - {fileID: 1882075710}
   - {fileID: 1403479835}
   - {fileID: 740520152}
   m_Father: {fileID: 591624459}
@@ -8468,7 +8800,7 @@ GameObject:
   - component: {fileID: 2038227984}
   - component: {fileID: 2038227983}
   m_Layer: 5
-  m_Name: Button Pista UTI
+  m_Name: uti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8537,7 +8869,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2038227984}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2038227984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8589,7 +8945,7 @@ GameObject:
   - component: {fileID: 2081178304}
   - component: {fileID: 2081178303}
   m_Layer: 5
-  m_Name: Button Pista Laboratorio
+  m_Name: laboratorio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8658,7 +9014,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2081178304}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: PistaSelecionadaSP
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8278104896990089231}
+        m_TargetAssemblyTypeName: LocationTrigger, Assembly-CSharp
+        m_MethodName: PistaSelecionadaLT
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2081178304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9178,6 +9558,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 5903523370281479816}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!224 &328740692405760945
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9365,6 +9746,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 9191134531160191975}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!224 &436078533189408083
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9608,7 +9990,7 @@ GameObject:
   - component: {fileID: 8334937001287961678}
   - component: {fileID: 7550250377598137087}
   m_Layer: 0
-  m_Name: RepousoMedico
+  m_Name: Repouso Medico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9865,6 +10247,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 4770090841105667762}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!1 &813745571252723162
 GameObject:
   m_ObjectHideFlags: 0
@@ -10109,7 +10492,7 @@ GameObject:
   - component: {fileID: 7472956175248353062}
   - component: {fileID: 7494413571253146052}
   m_Layer: 0
-  m_Name: BlocoCirurgico
+  m_Name: Bloco Cirurgico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10655,7 +11038,7 @@ GameObject:
   - component: {fileID: 2052400509918056699}
   - component: {fileID: 4698869219237509229}
   m_Layer: 5
-  m_Name: Button - Dicas
+  m_Name: Button - Pistas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11871,6 +12254,7 @@ MonoBehaviour:
   painelPerguntas: {fileID: 468558168}
   painelPistaRecolhida: {fileID: 591624458}
   painelResponderCaso: {fileID: 6467424657114790954}
+  pistasDebloqueadas: []
   gameStarted: 0
   playerScore: 0
   isMenuOpen: 0
@@ -14599,6 +14983,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 8975533006517694674}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!23 &3990466382228823095
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15329,6 +15714,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8067406248008409093}
+        m_TargetAssemblyTypeName: SistemaPistas, Assembly-CSharp
+        m_MethodName: DesbloquearPistas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &4700188272653423050
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15416,6 +15813,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 669418864324674626}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!1 &4909631987993914807
 GameObject:
   m_ObjectHideFlags: 0
@@ -15780,6 +16178,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 6976724961192458466}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!212 &5279584051985199400
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16402,6 +16801,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 2051777457966847722}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!1 &5903523370281479816
 GameObject:
   m_ObjectHideFlags: 0
@@ -16808,6 +17208,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 4909631987993914807}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!222 &6077177631801919836
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16850,6 +17251,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 3268741215104066103}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!4 &6151336827276291250
 Transform:
   m_ObjectHideFlags: 0
@@ -17578,6 +17980,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 9173376317677079429}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!114 &6724961496443484817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17823,6 +18226,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 2250804327388064113}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!4 &6758260656752112246
 Transform:
   m_ObjectHideFlags: 0
@@ -18051,7 +18455,7 @@ GameObject:
   - component: {fileID: 4258522836489292978}
   - component: {fileID: 5247855040434019137}
   m_Layer: 0
-  m_Name: ProntoSocorro
+  m_Name: Pronto Socorro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18831,6 +19235,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 1996341658180298971}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!23 &7497514237447174172
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18931,6 +19336,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 5424109343453747290}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!222 &7556273579725410866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19418,6 +19824,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 3171046929965517500}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!1 &8023559236498810711
 GameObject:
   m_ObjectHideFlags: 0
@@ -19516,6 +19923,25 @@ MonoBehaviour:
   casoOpcao2: {fileID: 164443845}
   casoOpcao3: {fileID: 1058379663}
   casoOpcao4: {fileID: 1845336791}
+  painelPistaRecolhida: {fileID: 591624458}
+  contadorPistas: {fileID: 1057080177}
+  locais:
+  - {fileID: 159870568}
+  - {fileID: 1057331202}
+  - {fileID: 1741295316}
+  - {fileID: 1035131137}
+  - {fileID: 518325882}
+  - {fileID: 1974462952}
+  - {fileID: 1748320908}
+  - {fileID: 2081178301}
+  - {fileID: 1643078004}
+  - {fileID: 1847104156}
+  - {fileID: 1880333839}
+  - {fileID: 844163101}
+  - {fileID: 976666413}
+  - {fileID: 917720379}
+  - {fileID: 1689470795}
+  - {fileID: 2038227981}
 --- !u!1 &8069822467270338910
 GameObject:
   m_ObjectHideFlags: 0
@@ -22642,6 +23068,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 7087736879170051928}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!61 &8334937001287961678
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23101,6 +23528,7 @@ MonoBehaviour:
   clueUnlocked: 0
   alert: {fileID: 8832831946017028144}
   pista: {fileID: 1403479836}
+  local: {fileID: 1882075708}
 --- !u!224 &8627958989445905968
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23323,7 +23751,7 @@ GameObject:
   - component: {fileID: 7139489581907399011}
   - component: {fileID: 5824807936823712053}
   m_Layer: 0
-  m_Name: PostoEnfermagem
+  m_Name: Posto de Enfermagem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23561,7 +23989,6 @@ RectTransform:
   m_Children:
   - {fileID: 836634046}
   - {fileID: 8978997737261168600}
-  - {fileID: 1357878524}
   - {fileID: 1057080176}
   m_Father: {fileID: 5714605737177574992}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

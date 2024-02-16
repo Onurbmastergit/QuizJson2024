@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     public bool gameStarted;
 
-    public int casoSelecionado;
+    public int casoSelecionado = 0;
 
     void Awake()
     {
