@@ -60,7 +60,7 @@ public class SistemaPerguntas : MonoBehaviour
 
     void Aleatorizador()
     {
-        if (perguntasUsadas.Count == jsonPerguntasReader.listaPerguntas.Count)
+        if (perguntasUsadas.Count == jsonPerguntasReader.listaPerguntas.Count - 1)
         {
             perguntasUsadas.Clear();
         }
@@ -74,6 +74,7 @@ public class SistemaPerguntas : MonoBehaviour
         }
 
         perguntasUsadas.Add(perguntaSelecionada);
+        Debug.Log($"Perguntas usadas: {perguntasUsadas.Count} / Perguntas total: {jsonPerguntasReader.listaPerguntas.Count}");
     }
 
     void RespostaErrada()
@@ -105,15 +106,17 @@ public class SistemaPerguntas : MonoBehaviour
 
         GameManager.Instance.perguntasRespondidas++;
 
+        Thread.Sleep(250);
+
         if (respostaCorreta == alternativa)
         {
+            Thread.Sleep(250);
             GameManager.Instance.perguntasAcertadas++;
             CaseManager.Instance.playerScore++;
             score.text = score.text + "* ";
 
             if (CaseManager.Instance.playerScore >= 10)
             {
-                Thread.Sleep(500);
                 CaseManager.Instance.playerScore = 0;
                 score.text = "";
                 perguntas.SetActive(false);

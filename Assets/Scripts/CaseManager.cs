@@ -130,6 +130,14 @@ public class CaseManager : MonoBehaviour
 
             menuVoltar.SetActive(false);
             return;
+        } else if (menuCaso.activeSelf || menuDica.activeSelf)
+        {
+            CaseManager.Instance.isMenuOpen = false;
+            interfaceBackground.SetActive(false);
+
+            menuDica.SetActive(false);
+            menuCaso.SetActive(false);
+            return;
         }
 
         CaseManager.Instance.isMenuOpen = true;

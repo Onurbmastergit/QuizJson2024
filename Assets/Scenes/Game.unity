@@ -2065,7 +2065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 468558169}
   - component: {fileID: 468558171}
-  - component: {fileID: 468558170}
+  - component: {fileID: 468558172}
   m_Layer: 5
   m_Name: Perguntas
   m_TagString: Untagged
@@ -2093,7 +2093,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &468558170
+--- !u!222 &468558171
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468558168}
+  m_CullTransparentMesh: 1
+--- !u!114 &468558172
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2102,7 +2110,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 468558168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -2113,24 +2121,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 630d70bcea7de6747b1606416f18deec, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &468558171
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 468558168}
-  m_CullTransparentMesh: 1
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &478260013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3319,7 +3316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 591624459}
   - component: {fileID: 591624461}
-  - component: {fileID: 591624460}
+  - component: {fileID: 591624462}
   m_Layer: 5
   m_Name: Pista Recolhida
   m_TagString: Untagged
@@ -3347,7 +3344,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &591624460
+--- !u!222 &591624461
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591624458}
+  m_CullTransparentMesh: 1
+--- !u!114 &591624462
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3356,7 +3361,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 591624458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -3367,24 +3372,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 630d70bcea7de6747b1606416f18deec, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &591624461
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 591624458}
-  m_CullTransparentMesh: 1
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &599857392
 GameObject:
   m_ObjectHideFlags: 0
@@ -12051,6 +12045,8 @@ MonoBehaviour:
   verificado: {fileID: 1982216134}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/escritorio-de-psicologo-para-terapia-familiar-em-clinica_33099-2413.jpg?w=1060&t=st=1708114401~exp=1708115001~hmac=dcc93d5c6ecd130817b0e2c4a786099a15e787b901d8bf99a05a0b89f3770c90
 --- !u!224 &328740692405760945
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12105,6 +12101,8 @@ MonoBehaviour:
   verificado: {fileID: 1652103803}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/desenhos-animados-do-hospital-do-cerebro-mri-do-doutor-e-do-paciente-no-exame-medico_33099-111.jpg?w=826&t=st=1708114677~exp=1708115277~hmac=ccf9ef68ba44c91e7ef29908fac4de7f823fc0d3b0636eeac785cf4fe6df7e4f
 --- !u!224 &436078533189408083
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12435,6 +12433,8 @@ MonoBehaviour:
   verificado: {fileID: 2116026542}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/restaurante-americano-vintage-desenhado-a-mao_23-2147561935.jpg?w=740&t=st=1708114556~exp=1708115156~hmac=44f42bae75898cbd646ee5641b605337d1350a39db6ba1c93faa650c665ee0f2
 --- !u!1 &813745571252723162
 GameObject:
   m_ObjectHideFlags: 0
@@ -15425,6 +15425,7 @@ GameObject:
   - component: {fileID: 2396095567048891499}
   - component: {fileID: 8067406248008409093}
   - component: {fileID: 8067406248008409094}
+  - component: {fileID: 8067406248008409095}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -16572,6 +16573,8 @@ MonoBehaviour:
   verificado: {fileID: 1548258393}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/escritorio-vazio-devido-a-pandemia_52683-36360.jpg?w=900&t=st=1708114640~exp=1708115240~hmac=ed82cac0dfe53261189d499f782a5edd166951363b64f8320f6a73155ac396e9
 --- !u!61 &4009095455324332705
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17294,6 +17297,8 @@ MonoBehaviour:
   verificado: {fileID: 658638095}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/animal-de-estimacao-e-veterinario_24908-57964.jpg?w=1060&t=st=1708114764~exp=1708115364~hmac=f313f311cdff597021ed0f9427b11f594d667896e69e6ba38251be9209424c30
 --- !u!1 &5014907783392845594
 GameObject:
   m_ObjectHideFlags: 0
@@ -17641,6 +17646,8 @@ MonoBehaviour:
   verificado: {fileID: 1712480631}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-quarto-de-hospital_114360-8238.jpg?w=900&t=st=1708114482~exp=1708115082~hmac=a490d5bbae2c23ea263d01932604a78948b21a3f5fa9e622d9cf705a2fa921a9
 --- !u!212 &5279584051985199400
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18247,6 +18254,8 @@ MonoBehaviour:
   verificado: {fileID: 2106699133}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/consultorio-de-ginecologia_33099-2152.jpg?w=1060&t=st=1708114307~exp=1708114907~hmac=e11b201aa24d4e20305b7c4666df4500e7b97731a089904c9360252d26e40f91
 --- !u!222 &5927116166626978838
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18719,6 +18728,8 @@ MonoBehaviour:
   verificado: {fileID: 812470186}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/ilustracao-da-enfermaria-de-hospital-do-quarto-do-paciente-da-clinica-fundo-interior-vazio-medico-dos-desenhos-animados_33099-675.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703635200&semt=ais
 --- !u!222 &6071712423282102559
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18770,6 +18781,8 @@ MonoBehaviour:
   verificado: {fileID: 1411412627}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/ilustracao-de-sala-de-cirurgia_33099-2112.jpg?w=1060&t=st=1708114516~exp=1708115116~hmac=ea34bef03e81bddb2e63fa7653dd1754a561ec52f470746e52a0e0ec0614df83
 --- !u!4 &6151336827276291250
 Transform:
   m_ObjectHideFlags: 0
@@ -19458,6 +19471,8 @@ MonoBehaviour:
   verificado: {fileID: 555996470}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/sala-de-laboratorio-estilo-desenho-animado_23-2148894965.jpg?size=626&ext=jpg&ga=GA1.1.487477698.1705365116&semt=ais
 --- !u!114 &6724961496443484817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19703,6 +19718,8 @@ MonoBehaviour:
   verificado: {fileID: 142437596}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/sala-de-laboratorio-estilo-desenho-animado_52683-58724.jpg?w=900&t=st=1708114355~exp=1708114955~hmac=0f361791c96cec0a7d480c891c9d62b5ca200d04c86b6d5565abff8b757b7e2d
 --- !u!4 &6758260656752112246
 Transform:
   m_ObjectHideFlags: 0
@@ -20544,6 +20561,8 @@ MonoBehaviour:
   verificado: {fileID: 2008211101}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/composicao-de-operacao-cirurgica-de-hospital_1284-65030.jpg
 --- !u!23 &7497514237447174172
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20734,6 +20753,8 @@ MonoBehaviour:
   verificado: {fileID: 589265853}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/bonita-mae-com-bebe-recem-nascido-no-quarto-do-hospital_25030-39947.jpg?w=900&t=st=1708114799~exp=1708115399~hmac=71f922deeebb154a9a4a7dc93ae1079c1bd5142ddac2f11e92c0ea8d0c1627c9
 --- !u!222 &7556273579725410866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21233,6 +21254,8 @@ MonoBehaviour:
   verificado: {fileID: 1796575394}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/modern-hospital-reception-com-design-plano_23-2147990411.jpg?w=740&t=st=1708114608~exp=1708115208~hmac=6ca662fc3f6c8da04bef3707c18a4fedf45a1942fd2aa7790839f4e3088431a6
 --- !u!1 &8023559236498810711
 GameObject:
   m_ObjectHideFlags: 0
@@ -21423,6 +21446,20 @@ MonoBehaviour:
   pista: {fileID: 591624458}
   timer: 60
   timerText: {fileID: 75775698}
+--- !u!114 &8067406248008409095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306460684828502980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 372b279dbeb49f74ea247c15b80a782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rawImage: {fileID: 468558172}
+  rawImage2: {fileID: 591624462}
 --- !u!1 &8069822467270338910
 GameObject:
   m_ObjectHideFlags: 0
@@ -24489,6 +24526,8 @@ MonoBehaviour:
   verificado: {fileID: 1402330871}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://media.istockphoto.com/id/1300331505/pt/vetorial/living-room-interior-comfortable-sofa-bookcase-chair-and-house-plants-vector-flat-style.jpg?s=612x612&w=0&k=20&c=vE-CB0nNJyxmblGwZgP3czb57bFK-s754qIdvYfp_Rw=
 --- !u!222 &8309774134021199868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24886,6 +24925,8 @@ MonoBehaviour:
   verificado: {fileID: 558202263}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
+  imageLoader: {fileID: 8067406248008409095}
+  imageUrl: https://img.freepik.com/vetores-gratis/composicao-de-recepcao-do-hotel-moderno_23-2147994125.jpg?w=740&t=st=1708114446~exp=1708115046~hmac=d15d82acbd6f905dd7a2d60d4a214a0e94b4595713b5d478dc35587f5be3b6d0
 --- !u!114 &8616839624415176381
 MonoBehaviour:
   m_ObjectHideFlags: 0
