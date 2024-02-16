@@ -33,7 +33,7 @@ public class LocationTrigger : MonoBehaviour
     JsonCasosReader jsonCasosReader;
 
     public bool clueUnlocked = false;
-    public GameObject alert;
+    public GameObject verificado;
 
     public TextMeshProUGUI pista;
     public TextMeshProUGUI local;
@@ -89,7 +89,7 @@ public class LocationTrigger : MonoBehaviour
 
         if (clueUnlocked)
         {
-            alert.SetActive(false);
+            verificado.SetActive(true);
 
             Debug.Log($"===== Trigger: PISTA {ln} DESBLOQUEADA =====");
         }

@@ -4,11 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using UnityEngine.Networking;
 
 public class JsonPerguntasReader : MonoBehaviour
 {
-    public TextAsset textJSON;
-
     [Serializable]
     public class Question
     {
@@ -20,13 +19,25 @@ public class JsonPerguntasReader : MonoBehaviour
 
     public List<Question> listaPerguntas = new List<Question>();
 
-    void Start()
+    // Primeiro, tornar o Start, ou o método que for fazer a requisição como IEnumetor (assíncrono):
+    IEnumerator Start()
     {
-        // Encontra o arquivo
-        TextAsset file = Resources.Load<TextAsset>("perguntas");
+        // URL do arquivo JSON remoto
+        string url = "https://conradosaud.com.br/outros/game_detetive/perguntas.json";
 
-        // Le o arquivo JSON
-        JObject json = JObject.Parse(file.text);
+        // Cria uma solicitação (request) de busca (GET) usando UnityWebRequest
+        // Isso se chama consulta HTTP. Nesse projeto será usado o GET para buscar o id na API do cliente
+        // Mas também será usado POST para criar um usuário (que nunca jogou) e o PUT para alterar um que já existe
+        UnityWebRequest request = UnityWebRequest.Get(url);
+
+        // Envia a solicitação e aguarda a resposta
+        yield return request.SendWebRequest();
+
+        // Obtém os dados JSON da resposta
+        string jsonData = request.downloadHandler.text;
+
+        // Faça o que quiser com os dados JSON
+        JObject json = JObject.Parse(jsonData);
 
         foreach (var pergunta in json)
         {
