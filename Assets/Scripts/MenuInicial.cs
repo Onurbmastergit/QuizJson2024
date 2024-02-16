@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuInicial : MonoBehaviour
 {
@@ -41,5 +42,10 @@ public class MenuInicial : MonoBehaviour
         }
         GameManager.Instance.casoSelecionado = i;
         Debug.Log($"Caso Selecionado: {i}");
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Game");
     }
 }

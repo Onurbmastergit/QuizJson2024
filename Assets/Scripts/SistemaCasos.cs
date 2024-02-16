@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SistemaCasos : MonoBehaviour
 {
@@ -63,8 +64,6 @@ public class SistemaCasos : MonoBehaviour
         {
             string nomeLocal = locais[i].name;
 
-            Debug.Log(nomeLocal);
-
             if (CaseManager.Instance.pistasDebloqueadas.Contains(nomeLocal))
             {
                 locais[i].GetComponent<Button>().enabled = true;
@@ -84,5 +83,26 @@ public class SistemaCasos : MonoBehaviour
         }
 
         contadorPistas.text = $"{CaseManager.Instance.pistasDebloqueadas.Count} / {locais.Length}";
+    }
+
+    public GameObject painelWin;
+    public GameObject painelOver;
+    public GameObject painelRespostaCaso;
+
+    public void RepostaCasoCerta()
+    {
+        painelRespostaCaso.SetActive(false);
+        painelWin.SetActive(true);
+    }
+
+    public void RepostaCasoErrada()
+    {
+        painelRespostaCaso.SetActive(false);
+        painelOver.SetActive(true);
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

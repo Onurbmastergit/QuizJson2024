@@ -32,8 +32,6 @@ public class LocationTrigger : MonoBehaviour
 
     JsonCasosReader jsonCasosReader;
 
-    SistemaPerguntas sistemaPerguntas;
-
     public bool clueUnlocked = false;
     public GameObject alert;
 
@@ -84,7 +82,6 @@ public class LocationTrigger : MonoBehaviour
     void QuestionTrigger()
     {
         CaseManager.Instance.painelPerguntas.SetActive(true);
-        sistemaPerguntas.GerarPergunta();
         CaseManager.Instance.isMenuOpen = true;
 
         clueUnlocked = true;

@@ -4,10 +4,13 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEngine.UI;
+using System.Threading;
 
 public class SistemaPerguntas : MonoBehaviour
 {
     private JsonPerguntasReader jsonPerguntasReader;
+
+    public TextMeshProUGUI score;
 
     public TextMeshProUGUI perguntaText;
     public TextMeshProUGUI comentarioText;
@@ -73,31 +76,9 @@ public class SistemaPerguntas : MonoBehaviour
         perguntasUsadas.Add(perguntaSelecionada);
     }
 
-    public void BotaoResposta(int alternativa)
-    {
-        var respostaCorreta = jsonPerguntasReader.listaPerguntas[perguntaSelecionada].resposta_correta;
-
-        GameManager.Instance.perguntasRespondidas++;
-
-        if (respostaCorreta == alternativa)
-        {
-            GameManager.Instance.perguntasAcertadas++;
-            CaseManager.Instance.playerScore++;
-
-            if (CaseManager.Instance.playerScore >= 10)
-            {
-                CaseManager.Instance.playerScore = 0;
-                perguntas.SetActive(false);
-                pista.SetActive(true);
-            }
-
-            GerarPergunta();
-        }
-        else RespostaErrada();
-    }
-
     void RespostaErrada()
     {
+        timer = 0;
         respostas.SetActive(false);
         comentario.SetActive(true);
     }
@@ -109,11 +90,39 @@ public class SistemaPerguntas : MonoBehaviour
             yield return new WaitForSeconds(1f);
             Debug.Log(timer);
 
-            if (timer >= 0) timerText.text = timer.ToString();
+            if (perguntas.activeSelf && timer > -1)
+            {
+                if (timer >= 0) timerText.text = timer.ToString();
+                timer--;
+            }
             else if (timer == -1) RespostaErrada();
-
-            timer--;
         }
+    }
+
+    public void BotaoResposta(int alternativa)
+    {
+        var respostaCorreta = jsonPerguntasReader.listaPerguntas[perguntaSelecionada].resposta_correta;
+
+        GameManager.Instance.perguntasRespondidas++;
+
+        if (respostaCorreta == alternativa)
+        {
+            GameManager.Instance.perguntasAcertadas++;
+            CaseManager.Instance.playerScore++;
+            score.text = score.text + "* ";
+
+            if (CaseManager.Instance.playerScore >= 10)
+            {
+                Thread.Sleep(500);
+                CaseManager.Instance.playerScore = 0;
+                score.text = "";
+                perguntas.SetActive(false);
+                pista.SetActive(true);
+            }
+
+            GerarPergunta();
+        }
+        else RespostaErrada();
     }
 
     public void FecharComentario()
