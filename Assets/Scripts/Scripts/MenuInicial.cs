@@ -14,7 +14,6 @@ public class MenuInicial : MonoBehaviour
         {
             painelInicial.SetActive(true);
             GameManager.Instance.gameStarted = true;
-            Debug.Log("starto");
         } else painelInicial.SetActive(false);
     }
 

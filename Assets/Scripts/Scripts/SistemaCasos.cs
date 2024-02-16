@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class SistemaCasos : MonoBehaviour
 {
+    private JsonCasosReader jsonCasosReader;
+
     public TextMeshProUGUI casoNome;
     public TextMeshProUGUI casoDescricao;
     public TextMeshProUGUI casoNome1;
@@ -18,7 +20,6 @@ public class SistemaCasos : MonoBehaviour
     public TextMeshProUGUI casoOpcao3;
     public TextMeshProUGUI casoOpcao4;
 
-    private JsonCasosReader jsonCasosReader;
     public GameObject painelPistaRecolhida;
 
     public TextMeshProUGUI contadorPistas;

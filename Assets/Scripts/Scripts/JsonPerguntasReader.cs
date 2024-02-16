@@ -5,35 +5,33 @@ using UnityEngine;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-public class JsonCasosReader : MonoBehaviour
+public class JsonPerguntasReader : MonoBehaviour
 {
     public TextAsset textJSON;
 
     [Serializable]
-    public class Case
+    public class Question
     {
-        public string nome_do_caso;
         public string pergunta;
         public int resposta_correta;
+        public string comentario;
         public string[] opcoes;
-
-        public Dictionary<string, string> pistas = new Dictionary<string, string>();
     }
 
-    public List<Case> listaCasos = new List<Case>();
+    public List<Question> listaPerguntas = new List<Question>();
 
     void Start()
     {
         // Encontra o arquivo
-        TextAsset file = Resources.Load<TextAsset>("casos");
+        TextAsset file = Resources.Load<TextAsset>("perguntas");
 
         // Le o arquivo JSON
         JObject json = JObject.Parse(file.text);
 
-        foreach (var caso in json)
+        foreach (var pergunta in json)
         {
-            var test = caso.Value.ToObject<Case>();
-            listaCasos.Add(caso.Value.ToObject<Case>());
+            var test = pergunta.Value.ToObject<Question>();
+            listaPerguntas.Add(pergunta.Value.ToObject<Question>());
         }
     }
 }

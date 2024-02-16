@@ -10,6 +10,10 @@ public class GameManager : MonoBehaviour
 
     public int casoSelecionado = 0;
 
+    public int perguntasRespondidas;
+    public int perguntasAcertadas;
+    public List<string> casosResolvidos = new List<string>();
+
     void Awake()
     {
         if (Instance == null)
