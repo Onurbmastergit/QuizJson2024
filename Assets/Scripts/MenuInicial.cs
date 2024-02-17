@@ -15,10 +15,17 @@ public class MenuInicial : MonoBehaviour
     public GameObject video;
     public VideoPlayer videoPlayer;
 
-    public string videoURL = "URL_do_seu_video.mp4";
+    public int casoNum;
+    private GameManager gameManager;
+
+    public List<string> videoURL = new List<string>();
+
 
     private void Start()
     {
+        gameManager = GameManager.Instance;
+
+        
         if (!GameManager.Instance.gameStarted)
         {
             painelInicial.SetActive(true);
@@ -46,6 +53,7 @@ public class MenuInicial : MonoBehaviour
 
     public void CasoSelecionado(int i)
     {
+        casoNum = i;
         if(GameManager.Instance == null)
         {
             return;
@@ -54,7 +62,7 @@ public class MenuInicial : MonoBehaviour
         Debug.Log($"Caso Selecionado: {i}");
     }
 
- public void StartGame()
+    public void StartGame()
     {
          video.SetActive(true);
 
@@ -65,7 +73,7 @@ public class MenuInicial : MonoBehaviour
     IEnumerator PlayVideoAndLoadScene()
     {
         // Define a URL do vídeo a ser reproduzido
-        videoPlayer.url = videoURL;
+        videoPlayer.url = videoURL[casoNum];
 
         // Prepara o vídeo
         videoPlayer.Prepare();
