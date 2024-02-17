@@ -29,8 +29,10 @@ public class SistemaPerguntas : MonoBehaviour
     public GameObject comentario;
     public GameObject pista;
 
-    public int timer = 60;
+    public float timer = 61;
+    private int segundosAnteriores = 0;
     public TextMeshProUGUI timerText;
+    bool resetTimer;
 
     void Start()
     {
@@ -43,7 +45,8 @@ public class SistemaPerguntas : MonoBehaviour
     public void GerarPergunta()
     {
         Aleatorizador();
-        timer = 60;
+
+        timer = 61;
 
         var perguntaAtual = jsonPerguntasReader.listaPerguntas[perguntaSelecionada];
 
@@ -79,7 +82,7 @@ public class SistemaPerguntas : MonoBehaviour
 
     void RespostaErrada()
     {
-        timer = 0;
+        timer = -1;
         respostas.SetActive(false);
         comentario.SetActive(true);
     }
@@ -88,15 +91,32 @@ public class SistemaPerguntas : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(1f);
-            Debug.Log(timer);
-
-            if (perguntas.activeSelf && timer > -1)
+            if (CaseManager.Instance.rodadaAtiva)
             {
-                if (timer >= 0) timerText.text = timer.ToString();
-                timer--;
+                timer -= Time.fixedDeltaTime;
             }
-            else if (timer == -1) RespostaErrada();
+
+            // Verifica se houve uma mudança nos segundos
+            int segundosAtuais = Mathf.FloorToInt(timer);
+            if (segundosAtuais != segundosAnteriores && segundosAtuais > 0)
+            {
+                timerText.text = segundosAtuais.ToString();
+                segundosAnteriores = segundosAtuais;
+            }
+
+            // Verifica se o tempo acabou
+            if (segundosAtuais == 0f)
+            {
+                Debug.Log("Tempo esgotado!");
+                RespostaErrada();
+            } 
+            // Verifica se a Resposta foi errada e zera o contador
+            else if (segundosAtuais < 0)
+            {
+                timerText.text = "0";
+            }
+
+            yield return new WaitForFixedUpdate();
         }
     }
 
