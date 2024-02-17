@@ -6,7 +6,7 @@ public class ButtoFunction : MonoBehaviour
 {
     private MenuInicial menuInicial;
     public int NumCaso;
-    public string htpps;
+    
 
     private void Awake()
     {
