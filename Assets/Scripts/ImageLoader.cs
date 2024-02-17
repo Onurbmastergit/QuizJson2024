@@ -2,18 +2,38 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 using System.Collections;
+using Unity.VisualScripting;
+using System.Collections.Generic;
 
 public class ImageLoader : MonoBehaviour
 {
-    public RawImage rawImage;
-    public RawImage rawImage2;
+    public RawImage backgroundPerguntas;
+    public RawImage backgroundPistas;
 
-    public void LoadRemoteImage(string imageUrl)
+    public List<RawImage> backgroundLocais = new List<RawImage>();
+    public List<string> listaURL = new List<string>();
+
+    void Start()
     {
-        StartCoroutine(LoadImageCoroutine(imageUrl));
+        StartCoroutine(LoadImagesCoroutine());
     }
 
-    IEnumerator LoadImageCoroutine(string imageUrl)
+    IEnumerator LoadImagesCoroutine()
+    {
+        for (int i = 0; i < backgroundLocais.Count; i++)
+        {
+            yield return StartCoroutine(LoadImageCoroutine(listaURL[i], i));
+        }
+    }
+
+    void Update()
+    {
+        int index = (int)CaseManager.Instance.localAtual;
+        backgroundPerguntas.texture = backgroundLocais[index].texture;
+        backgroundPistas.texture = backgroundLocais[index].texture;
+    }
+
+    IEnumerator LoadImageCoroutine(string imageUrl, int localIndex)
     {
         using (UnityWebRequest www = UnityWebRequestTexture.GetTexture(imageUrl))
         {
@@ -26,8 +46,12 @@ public class ImageLoader : MonoBehaviour
             else
             {
                 Texture2D texture = DownloadHandlerTexture.GetContent(www);
-                rawImage.texture = texture;
-                rawImage2.texture = texture;
+
+                // Certifique-se de que o índice está dentro dos limites da lista
+                if (localIndex < backgroundLocais.Count)
+                {
+                    backgroundLocais[localIndex].texture = texture;
+                }
             }
         }
     }

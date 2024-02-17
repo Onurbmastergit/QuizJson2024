@@ -38,9 +38,6 @@ public class LocationTrigger : MonoBehaviour
     public TextMeshProUGUI pista;
     public TextMeshProUGUI local;
 
-    public ImageLoader imageLoader;
-    public string imageUrl; // Declarar imageUrl como uma propriedade pública
-
     List<string> nomeLocais = new List<string>()
     {
         "Financeiro",
@@ -72,7 +69,6 @@ public class LocationTrigger : MonoBehaviour
     {
         CaseManager.Instance.localAtual = ln;
         Debug.Log($"Entrando no {ln} {CaseManager.Instance.localAtual}");
-        imageLoader.LoadRemoteImage(imageUrl);
 
         CaseManager.Instance.isMenuOpen = true;
         PistaSelecionadaLT();

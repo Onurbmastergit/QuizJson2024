@@ -1754,6 +1754,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232813857}
   m_CullTransparentMesh: 1
+--- !u!1 &234008606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 234008609}
+  - component: {fileID: 234008608}
+  - component: {fileID: 234008607}
+  m_Layer: 5
+  m_Name: bg Financeiro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &234008607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234008606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &234008608
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234008606}
+  m_CullTransparentMesh: 1
+--- !u!224 &234008609
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234008606}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &323733262
 GameObject:
   m_ObjectHideFlags: 0
@@ -3463,6 +3535,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &649151753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 649151756}
+  - component: {fileID: 649151755}
+  - component: {fileID: 649151754}
+  m_Layer: 5
+  m_Name: bg Pediatria
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &649151754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649151753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &649151755
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649151753}
+  m_CullTransparentMesh: 1
+--- !u!224 &649151756
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649151753}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &658638095
 GameObject:
   m_ObjectHideFlags: 0
@@ -4159,6 +4303,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740520151}
   m_CullTransparentMesh: 1
+--- !u!1 &740775007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 740775010}
+  - component: {fileID: 740775009}
+  - component: {fileID: 740775008}
+  m_Layer: 5
+  m_Name: bg Repouso Medico
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &740775008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740775007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &740775009
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740775007}
+  m_CullTransparentMesh: 1
+--- !u!224 &740775010
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740775007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &751428451
 GameObject:
   m_ObjectHideFlags: 0
@@ -6254,6 +6470,150 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058379661}
   m_CullTransparentMesh: 1
+--- !u!1 &1096806827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1096806830}
+  - component: {fileID: 1096806829}
+  - component: {fileID: 1096806828}
+  m_Layer: 5
+  m_Name: bg Oncologia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1096806828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096806827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1096806829
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096806827}
+  m_CullTransparentMesh: 1
+--- !u!224 &1096806830
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096806827}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1108248385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108248388}
+  - component: {fileID: 1108248387}
+  - component: {fileID: 1108248386}
+  m_Layer: 5
+  m_Name: bg Farmacia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1108248386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108248385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1108248387
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108248385}
+  m_CullTransparentMesh: 1
+--- !u!224 &1108248388
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108248385}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1112364878
 GameObject:
   m_ObjectHideFlags: 0
@@ -7075,6 +7435,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213684470}
   m_CullTransparentMesh: 1
+--- !u!1 &1217479191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1217479194}
+  - component: {fileID: 1217479193}
+  - component: {fileID: 1217479192}
+  m_Layer: 5
+  m_Name: bg Posto de Enfermagem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1217479192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217479191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1217479193
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217479191}
+  m_CullTransparentMesh: 1
+--- !u!224 &1217479194
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217479191}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1225475623
 GameObject:
   m_ObjectHideFlags: 0
@@ -7159,6 +7591,66 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1337055821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1337055822}
+  - component: {fileID: 1337055823}
+  m_Layer: 5
+  m_Name: Background Locais
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1337055822
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337055821}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 234008609}
+  - {fileID: 1467425379}
+  - {fileID: 1763394628}
+  - {fileID: 1217479194}
+  - {fileID: 1906671450}
+  - {fileID: 1096806830}
+  - {fileID: 1611146339}
+  - {fileID: 1652260573}
+  - {fileID: 1625953310}
+  - {fileID: 1833539576}
+  - {fileID: 1531656021}
+  - {fileID: 2004790716}
+  - {fileID: 1642956922}
+  - {fileID: 1108248388}
+  - {fileID: 649151756}
+  - {fileID: 740775010}
+  m_Father: {fileID: 6738013140025869641}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1337055823
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337055821}
+  m_CullTransparentMesh: 1
 --- !u!1 &1370096717
 GameObject:
   m_ObjectHideFlags: 0
@@ -7729,6 +8221,150 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454024326}
   m_CullTransparentMesh: 1
+--- !u!1 &1467425376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1467425379}
+  - component: {fileID: 1467425378}
+  - component: {fileID: 1467425377}
+  m_Layer: 5
+  m_Name: bg Ambulatorio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1467425377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467425376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1467425378
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467425376}
+  m_CullTransparentMesh: 1
+--- !u!224 &1467425379
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467425376}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1531656018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531656021}
+  - component: {fileID: 1531656020}
+  - component: {fileID: 1531656019}
+  m_Layer: 5
+  m_Name: bg Enfermaria
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1531656019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531656018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1531656020
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531656018}
+  m_CullTransparentMesh: 1
+--- !u!224 &1531656021
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531656018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1539148278
 GameObject:
   m_ObjectHideFlags: 0
@@ -8299,6 +8935,150 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607871982}
   m_CullTransparentMesh: 1
+--- !u!1 &1611146336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611146339}
+  - component: {fileID: 1611146338}
+  - component: {fileID: 1611146337}
+  m_Layer: 5
+  m_Name: bg Recepcao
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1611146337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611146336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1611146338
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611146336}
+  m_CullTransparentMesh: 1
+--- !u!224 &1611146339
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611146336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1625953307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1625953310}
+  - component: {fileID: 1625953309}
+  - component: {fileID: 1625953308}
+  m_Layer: 5
+  m_Name: bg Lanchonete
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1625953308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625953307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1625953309
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625953307}
+  m_CullTransparentMesh: 1
+--- !u!224 &1625953310
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625953307}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1627445159
 GameObject:
   m_ObjectHideFlags: 0
@@ -8467,6 +9247,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1642956919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1642956922}
+  - component: {fileID: 1642956921}
+  - component: {fileID: 1642956920}
+  m_Layer: 5
+  m_Name: bg Radiologia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1642956920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642956919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1642956921
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642956919}
+  m_CullTransparentMesh: 1
+--- !u!224 &1642956922
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642956919}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1643078004
 GameObject:
   m_ObjectHideFlags: 0
@@ -8829,6 +9681,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1652260570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1652260573}
+  - component: {fileID: 1652260572}
+  - component: {fileID: 1652260571}
+  m_Layer: 5
+  m_Name: bg Pronto Socorro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1652260571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652260570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1652260572
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652260570}
+  m_CullTransparentMesh: 1
+--- !u!224 &1652260573
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652260570}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1689470795
 GameObject:
   m_ObjectHideFlags: 0
@@ -9348,6 +10272,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748320908}
   m_CullTransparentMesh: 1
+--- !u!1 &1763394625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1763394628}
+  - component: {fileID: 1763394627}
+  - component: {fileID: 1763394626}
+  m_Layer: 5
+  m_Name: bg Bloco Cirurgico
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1763394626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763394625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1763394627
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763394625}
+  m_CullTransparentMesh: 1
+--- !u!224 &1763394628
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763394625}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1796575394
 GameObject:
   m_ObjectHideFlags: 0
@@ -9650,6 +10646,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1833539573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1833539576}
+  - component: {fileID: 1833539575}
+  - component: {fileID: 1833539574}
+  m_Layer: 5
+  m_Name: bg UTI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1833539574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833539573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1833539575
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833539573}
+  m_CullTransparentMesh: 1
+--- !u!224 &1833539576
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833539573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1845336789
 GameObject:
   m_ObjectHideFlags: 0
@@ -10207,6 +11275,78 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 300, y: 419}
   m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1906671447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1906671450}
+  - component: {fileID: 1906671449}
+  - component: {fileID: 1906671448}
+  m_Layer: 5
+  m_Name: bg Laboratorio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1906671448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906671447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1906671449
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906671447}
+  m_CullTransparentMesh: 1
+--- !u!224 &1906671450
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906671447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1915325883
 GameObject:
@@ -10789,6 +11929,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2004790713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2004790716}
+  - component: {fileID: 2004790715}
+  - component: {fileID: 2004790714}
+  m_Layer: 5
+  m_Name: bg Diretoria
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2004790714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004790713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &2004790715
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004790713}
+  m_CullTransparentMesh: 1
+--- !u!224 &2004790716
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004790713}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1337055822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2008211101
 GameObject:
   m_ObjectHideFlags: 0
@@ -12045,8 +13257,6 @@ MonoBehaviour:
   verificado: {fileID: 1982216134}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/escritorio-de-psicologo-para-terapia-familiar-em-clinica_33099-2413.jpg?w=1060&t=st=1708114401~exp=1708115001~hmac=dcc93d5c6ecd130817b0e2c4a786099a15e787b901d8bf99a05a0b89f3770c90
 --- !u!224 &328740692405760945
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12101,8 +13311,6 @@ MonoBehaviour:
   verificado: {fileID: 1652103803}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/desenhos-animados-do-hospital-do-cerebro-mri-do-doutor-e-do-paciente-no-exame-medico_33099-111.jpg?w=826&t=st=1708114677~exp=1708115277~hmac=ccf9ef68ba44c91e7ef29908fac4de7f823fc0d3b0636eeac785cf4fe6df7e4f
 --- !u!224 &436078533189408083
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12433,8 +13641,6 @@ MonoBehaviour:
   verificado: {fileID: 2116026542}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/restaurante-americano-vintage-desenhado-a-mao_23-2147561935.jpg?w=740&t=st=1708114556~exp=1708115156~hmac=44f42bae75898cbd646ee5641b605337d1350a39db6ba1c93faa650c665ee0f2
 --- !u!1 &813745571252723162
 GameObject:
   m_ObjectHideFlags: 0
@@ -16573,8 +17779,6 @@ MonoBehaviour:
   verificado: {fileID: 1548258393}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/escritorio-vazio-devido-a-pandemia_52683-36360.jpg?w=900&t=st=1708114640~exp=1708115240~hmac=ed82cac0dfe53261189d499f782a5edd166951363b64f8320f6a73155ac396e9
 --- !u!61 &4009095455324332705
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17297,8 +18501,6 @@ MonoBehaviour:
   verificado: {fileID: 658638095}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/animal-de-estimacao-e-veterinario_24908-57964.jpg?w=1060&t=st=1708114764~exp=1708115364~hmac=f313f311cdff597021ed0f9427b11f594d667896e69e6ba38251be9209424c30
 --- !u!1 &5014907783392845594
 GameObject:
   m_ObjectHideFlags: 0
@@ -17646,8 +18848,6 @@ MonoBehaviour:
   verificado: {fileID: 1712480631}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-quarto-de-hospital_114360-8238.jpg?w=900&t=st=1708114482~exp=1708115082~hmac=a490d5bbae2c23ea263d01932604a78948b21a3f5fa9e622d9cf705a2fa921a9
 --- !u!212 &5279584051985199400
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18254,8 +19454,6 @@ MonoBehaviour:
   verificado: {fileID: 2106699133}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/consultorio-de-ginecologia_33099-2152.jpg?w=1060&t=st=1708114307~exp=1708114907~hmac=e11b201aa24d4e20305b7c4666df4500e7b97731a089904c9360252d26e40f91
 --- !u!222 &5927116166626978838
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18728,8 +19926,6 @@ MonoBehaviour:
   verificado: {fileID: 812470186}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/ilustracao-da-enfermaria-de-hospital-do-quarto-do-paciente-da-clinica-fundo-interior-vazio-medico-dos-desenhos-animados_33099-675.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703635200&semt=ais
 --- !u!222 &6071712423282102559
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18781,8 +19977,6 @@ MonoBehaviour:
   verificado: {fileID: 1411412627}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/ilustracao-de-sala-de-cirurgia_33099-2112.jpg?w=1060&t=st=1708114516~exp=1708115116~hmac=ea34bef03e81bddb2e63fa7653dd1754a561ec52f470746e52a0e0ec0614df83
 --- !u!4 &6151336827276291250
 Transform:
   m_ObjectHideFlags: 0
@@ -19471,8 +20665,6 @@ MonoBehaviour:
   verificado: {fileID: 555996470}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/sala-de-laboratorio-estilo-desenho-animado_23-2148894965.jpg?size=626&ext=jpg&ga=GA1.1.487477698.1705365116&semt=ais
 --- !u!114 &6724961496443484817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19598,6 +20790,7 @@ RectTransform:
   m_Children:
   - {fileID: 703913416}
   - {fileID: 6031175296931947662}
+  - {fileID: 1337055822}
   - {fileID: 468558169}
   - {fileID: 591624459}
   - {fileID: 7836132672843864367}
@@ -19718,8 +20911,6 @@ MonoBehaviour:
   verificado: {fileID: 142437596}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/sala-de-laboratorio-estilo-desenho-animado_52683-58724.jpg?w=900&t=st=1708114355~exp=1708114955~hmac=0f361791c96cec0a7d480c891c9d62b5ca200d04c86b6d5565abff8b757b7e2d
 --- !u!4 &6758260656752112246
 Transform:
   m_ObjectHideFlags: 0
@@ -20561,8 +21752,6 @@ MonoBehaviour:
   verificado: {fileID: 2008211101}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/composicao-de-operacao-cirurgica-de-hospital_1284-65030.jpg
 --- !u!23 &7497514237447174172
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20753,8 +21942,6 @@ MonoBehaviour:
   verificado: {fileID: 589265853}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/bonita-mae-com-bebe-recem-nascido-no-quarto-do-hospital_25030-39947.jpg?w=900&t=st=1708114799~exp=1708115399~hmac=71f922deeebb154a9a4a7dc93ae1079c1bd5142ddac2f11e92c0ea8d0c1627c9
 --- !u!222 &7556273579725410866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21254,8 +22441,6 @@ MonoBehaviour:
   verificado: {fileID: 1796575394}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/modern-hospital-reception-com-design-plano_23-2147990411.jpg?w=740&t=st=1708114608~exp=1708115208~hmac=6ca662fc3f6c8da04bef3707c18a4fedf45a1942fd2aa7790839f4e3088431a6
 --- !u!1 &8023559236498810711
 GameObject:
   m_ObjectHideFlags: 0
@@ -21458,8 +22643,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 372b279dbeb49f74ea247c15b80a782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rawImage: {fileID: 468558172}
-  rawImage2: {fileID: 591624462}
+  backgroundPerguntas: {fileID: 468558172}
+  backgroundPistas: {fileID: 591624462}
+  backgroundLocais:
+  - {fileID: 234008607}
+  - {fileID: 1467425377}
+  - {fileID: 1763394626}
+  - {fileID: 1217479192}
+  - {fileID: 1906671448}
+  - {fileID: 1096806828}
+  - {fileID: 1611146337}
+  - {fileID: 1652260571}
+  - {fileID: 1625953308}
+  - {fileID: 1833539574}
+  - {fileID: 1531656019}
+  - {fileID: 2004790714}
+  - {fileID: 1642956920}
+  - {fileID: 1108248386}
+  - {fileID: 649151754}
+  - {fileID: 740775008}
+  listaURL:
+  - https://media.istockphoto.com/id/1300331505/pt/vetorial/living-room-interior-comfortable-sofa-bookcase-chair-and-house-plants-vector-flat-style.jpg?s=612x612&w=0&k=20&c=vE-CB0nNJyxmblGwZgP3czb57bFK-s754qIdvYfp_Rw=
+  - https://img.freepik.com/vetores-gratis/ilustracao-da-enfermaria-de-hospital-do-quarto-do-paciente-da-clinica-fundo-interior-vazio-medico-dos-desenhos-animados_33099-675.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703635200&semt=ais
+  - https://img.freepik.com/vetores-gratis/composicao-de-operacao-cirurgica-de-hospital_1284-65030.jpg
+  - https://img.freepik.com/vetores-gratis/consultorio-de-ginecologia_33099-2152.jpg?w=1060&t=st=1708114307~exp=1708114907~hmac=e11b201aa24d4e20305b7c4666df4500e7b97731a089904c9360252d26e40f91
+  - https://img.freepik.com/vetores-gratis/sala-de-laboratorio-estilo-desenho-animado_52683-58724.jpg?w=900&t=st=1708114355~exp=1708114955~hmac=0f361791c96cec0a7d480c891c9d62b5ca200d04c86b6d5565abff8b757b7e2d
+  - https://img.freepik.com/vetores-gratis/escritorio-de-psicologo-para-terapia-familiar-em-clinica_33099-2413.jpg?w=1060&t=st=1708114401~exp=1708115001~hmac=dcc93d5c6ecd130817b0e2c4a786099a15e787b901d8bf99a05a0b89f3770c90
+  - https://img.freepik.com/vetores-gratis/composicao-de-recepcao-do-hotel-moderno_23-2147994125.jpg?w=740&t=st=1708114446~exp=1708115046~hmac=d15d82acbd6f905dd7a2d60d4a214a0e94b4595713b5d478dc35587f5be3b6d0
+  - https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-quarto-de-hospital_114360-8238.jpg?w=900&t=st=1708114482~exp=1708115082~hmac=a490d5bbae2c23ea263d01932604a78948b21a3f5fa9e622d9cf705a2fa921a9
+  - https://img.freepik.com/vetores-gratis/restaurante-americano-vintage-desenhado-a-mao_23-2147561935.jpg?w=740&t=st=1708114556~exp=1708115156~hmac=44f42bae75898cbd646ee5641b605337d1350a39db6ba1c93faa650c665ee0f2
+  - https://img.freepik.com/vetores-gratis/ilustracao-de-sala-de-cirurgia_33099-2112.jpg?w=1060&t=st=1708114516~exp=1708115116~hmac=ea34bef03e81bddb2e63fa7653dd1754a561ec52f470746e52a0e0ec0614df83
+  - https://img.freepik.com/vetores-gratis/modern-hospital-reception-com-design-plano_23-2147990411.jpg?w=740&t=st=1708114608~exp=1708115208~hmac=6ca662fc3f6c8da04bef3707c18a4fedf45a1942fd2aa7790839f4e3088431a6
+  - https://img.freepik.com/vetores-gratis/escritorio-vazio-devido-a-pandemia_52683-36360.jpg?w=900&t=st=1708114640~exp=1708115240~hmac=ed82cac0dfe53261189d499f782a5edd166951363b64f8320f6a73155ac396e9
+  - https://img.freepik.com/vetores-gratis/desenhos-animados-do-hospital-do-cerebro-mri-do-doutor-e-do-paciente-no-exame-medico_33099-111.jpg?w=826&t=st=1708114677~exp=1708115277~hmac=ccf9ef68ba44c91e7ef29908fac4de7f823fc0d3b0636eeac785cf4fe6df7e4f
+  - https://img.freepik.com/vetores-gratis/sala-de-laboratorio-estilo-desenho-animado_23-2148894965.jpg?size=626&ext=jpg&ga=GA1.1.487477698.1705365116&semt=ais
+  - https://img.freepik.com/vetores-gratis/animal-de-estimacao-e-veterinario_24908-57964.jpg?w=1060&t=st=1708114764~exp=1708115364~hmac=f313f311cdff597021ed0f9427b11f594d667896e69e6ba38251be9209424c30
+  - https://img.freepik.com/vetores-gratis/bonita-mae-com-bebe-recem-nascido-no-quarto-do-hospital_25030-39947.jpg?w=900&t=st=1708114799~exp=1708115399~hmac=71f922deeebb154a9a4a7dc93ae1079c1bd5142ddac2f11e92c0ea8d0c1627c9
 --- !u!1 &8069822467270338910
 GameObject:
   m_ObjectHideFlags: 0
@@ -24526,8 +25745,6 @@ MonoBehaviour:
   verificado: {fileID: 1402330871}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://media.istockphoto.com/id/1300331505/pt/vetorial/living-room-interior-comfortable-sofa-bookcase-chair-and-house-plants-vector-flat-style.jpg?s=612x612&w=0&k=20&c=vE-CB0nNJyxmblGwZgP3czb57bFK-s754qIdvYfp_Rw=
 --- !u!222 &8309774134021199868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24925,8 +26142,6 @@ MonoBehaviour:
   verificado: {fileID: 558202263}
   pista: {fileID: 1403479836}
   local: {fileID: 1882075708}
-  imageLoader: {fileID: 8067406248008409095}
-  imageUrl: https://img.freepik.com/vetores-gratis/composicao-de-recepcao-do-hotel-moderno_23-2147994125.jpg?w=740&t=st=1708114446~exp=1708115046~hmac=d15d82acbd6f905dd7a2d60d4a214a0e94b4595713b5d478dc35587f5be3b6d0
 --- !u!114 &8616839624415176381
 MonoBehaviour:
   m_ObjectHideFlags: 0
