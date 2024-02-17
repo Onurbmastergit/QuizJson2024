@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     // Informa ao sistem quantos Casos existem dentro do arquivo casos.json
     public int quantidadeCasosJson;
+    public JsonCasosReader jsonCasosReader;
+    
 
     public int perguntasRespondidas;
     public int perguntasAcertadas;
@@ -33,6 +35,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+    if (jsonCasosReader.listaCasos.Count == quantidadeCasosJson)
+    {
         SceneManager.LoadScene("Menu");
+    }
     }
 }
