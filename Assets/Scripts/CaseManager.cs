@@ -24,11 +24,15 @@ public class CaseManager : MonoBehaviour
 
     public List<string> pistasDebloqueadas = new List<string>();
 
-
     public bool gameStarted;
     public int playerScore;
     public bool isMenuOpen;
     public locationNames localAtual;
+
+    public bool rodadaAtiva
+    {
+        get { return painelPerguntas.activeSelf; }
+    }
 
     public bool canMove
     {
