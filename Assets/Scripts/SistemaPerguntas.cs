@@ -32,7 +32,6 @@ public class SistemaPerguntas : MonoBehaviour
     public float timer = 61;
     private int segundosAnteriores = 0;
     public TextMeshProUGUI timerText;
-    bool resetTimer;
 
     void Start()
     {
@@ -53,11 +52,11 @@ public class SistemaPerguntas : MonoBehaviour
         perguntaText.text = perguntaAtual.pergunta.ToString();
         comentarioText.text = perguntaAtual.comentario.ToString();
 
-        respostaOpcao0.text = perguntaAtual.opcoes[0].ToString();
-        respostaOpcao1.text = perguntaAtual.opcoes[1].ToString();
-        respostaOpcao2.text = perguntaAtual.opcoes[2].ToString();
-        respostaOpcao3.text = perguntaAtual.opcoes[3].ToString();
-        respostaOpcao4.text = perguntaAtual.opcoes[4].ToString();
+        respostaOpcao0.text = perguntaAtual.opcoes[0].resposta.ToString();
+        respostaOpcao1.text = perguntaAtual.opcoes[1].resposta.ToString();
+        respostaOpcao2.text = perguntaAtual.opcoes[2].resposta.ToString();
+        respostaOpcao3.text = perguntaAtual.opcoes[3].resposta.ToString();
+        respostaOpcao4.text = perguntaAtual.opcoes[4].resposta.ToString();
 
     }
 
@@ -120,7 +119,7 @@ public class SistemaPerguntas : MonoBehaviour
         }
     }
 
-    public void BotaoResposta(int alternativa)
+    public void BotaoResposta(string alternativa)
     {
         var respostaCorreta = jsonPerguntasReader.listaPerguntas[perguntaSelecionada].resposta_correta;
 

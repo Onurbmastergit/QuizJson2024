@@ -14329,13 +14329,13 @@ MonoBehaviour:
       - m_Target: {fileID: 8067406248008409094}
         m_TargetAssemblyTypeName: SistemaPerguntas, Assembly-CSharp
         m_MethodName: BotaoResposta
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: d
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1726835423394272650
@@ -19637,13 +19637,13 @@ MonoBehaviour:
       - m_Target: {fileID: 8067406248008409094}
         m_TargetAssemblyTypeName: SistemaPerguntas, Assembly-CSharp
         m_MethodName: BotaoResposta
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: a
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &6030036183271935315
@@ -19900,13 +19900,13 @@ MonoBehaviour:
       - m_Target: {fileID: 8067406248008409094}
         m_TargetAssemblyTypeName: SistemaPerguntas, Assembly-CSharp
         m_MethodName: BotaoResposta
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: c
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &6071293258753505214
@@ -20060,13 +20060,13 @@ MonoBehaviour:
       - m_Target: {fileID: 8067406248008409094}
         m_TargetAssemblyTypeName: SistemaPerguntas, Assembly-CSharp
         m_MethodName: BotaoResposta
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: b
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!58 &6235434510526575365
@@ -22507,13 +22507,13 @@ MonoBehaviour:
       - m_Target: {fileID: 8067406248008409094}
         m_TargetAssemblyTypeName: SistemaPerguntas, Assembly-CSharp
         m_MethodName: BotaoResposta
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 4
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: e
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!4 &8062150437459463302

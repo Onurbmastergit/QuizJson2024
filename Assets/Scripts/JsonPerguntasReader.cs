@@ -12,9 +12,16 @@ public class JsonPerguntasReader : MonoBehaviour
     public class Question
     {
         public string pergunta;
-        public int resposta_correta;
+        public string resposta_correta;
         public string comentario;
-        public string[] opcoes;
+        public List<Options> opcoes = new List<Options>();
+    }
+
+    [Serializable]
+    public class Options
+    {
+        public string alternativa;
+        public string resposta;
     }
 
     public List<Question> listaPerguntas = new List<Question>();
@@ -23,11 +30,9 @@ public class JsonPerguntasReader : MonoBehaviour
     IEnumerator Start()
     {
         // URL do arquivo JSON remoto
-        string url = "https://conradosaud.com.br/outros/game_detetive/perguntas.json";
+        string url = "https://conradosaud.com.br/outros/game_detetive/perguntas2.json";
 
         // Cria uma solicitação (request) de busca (GET) usando UnityWebRequest
-        // Isso se chama consulta HTTP. Nesse projeto será usado o GET para buscar o id na API do cliente
-        // Mas também será usado POST para criar um usuário (que nunca jogou) e o PUT para alterar um que já existe
         UnityWebRequest request = UnityWebRequest.Get(url);
 
         // Envia a solicitação e aguarda a resposta
@@ -42,7 +47,7 @@ public class JsonPerguntasReader : MonoBehaviour
         foreach (var pergunta in json)
         {
             var test = pergunta.Value.ToObject<Question>();
-            listaPerguntas.Add(pergunta.Value.ToObject<Question>());
+            listaPerguntas.Add(test);
         }
     }
 }
