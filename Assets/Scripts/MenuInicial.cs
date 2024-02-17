@@ -4,12 +4,18 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
+using UnityEngine.Networking;
 
 public class MenuInicial : MonoBehaviour
 {
     private JsonCasosReader jsonCasosReader;
 
     public GameObject painelInicial;
+    public GameObject video;
+    public VideoPlayer videoPlayer;
+
+    public string videoURL = "URL_do_seu_video.mp4";
 
     private void Start()
     {
@@ -29,7 +35,7 @@ public class MenuInicial : MonoBehaviour
 
     public void Sair()
     {
-        Debug.Log("Comando: sair da p�gina web atual para a desejada");
+        Debug.Log("Comando: sair da pagina web atual para a desejada");
         Application.OpenURL("https://www.example.com");
     }
 
@@ -48,8 +54,56 @@ public class MenuInicial : MonoBehaviour
         Debug.Log($"Caso Selecionado: {i}");
     }
 
-    public void StartGame()
+ public void StartGame()
+    {
+         video.SetActive(true);
+
+        // Inicia a corrotina para reproduzir o vídeo antes de iniciar o jogo
+        StartCoroutine(PlayVideoAndLoadScene());
+       
+    }
+    IEnumerator PlayVideoAndLoadScene()
+    {
+        // Define a URL do vídeo a ser reproduzido
+        videoPlayer.url = videoURL;
+
+        // Prepara o vídeo
+        videoPlayer.Prepare();
+
+        // Aguarda até que o vídeo esteja pronto para ser reproduzido
+        while (!videoPlayer.isPrepared)
+        {
+            yield return null;
+        }
+
+        // Reproduz o vídeo
+        videoPlayer.Play();
+
+    }
+    public void GameStart()
     {
         SceneManager.LoadScene("Game");
     }
+
+    public void PlayButton()
+    {
+        videoPlayer.Play();
+
+    }
+    public void PauseButton()
+    {
+        videoPlayer.Pause();
+    }
+    public void RestartButton()
+    {
+         // Parar o vídeo
+        videoPlayer.Stop();
+
+        // Voltar para o início
+        videoPlayer.frame = 0;
+
+        // Reproduzir o vídeo novamente
+        videoPlayer.Play();
+    }
+  
 }
