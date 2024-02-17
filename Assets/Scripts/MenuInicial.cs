@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuInicial : MonoBehaviour
 {
+    private JsonCasosReader jsonCasosReader;
+
     public GameObject painelInicial;
 
     private void Start()
@@ -16,6 +18,8 @@ public class MenuInicial : MonoBehaviour
             painelInicial.SetActive(true);
             GameManager.Instance.gameStarted = true;
         } else painelInicial.SetActive(false);
+
+        Debug.Log("Quantidade de Casos no Json: "+GameManager.Instance.quantidadeCasosJson);
     }
 
     public void Entrar()

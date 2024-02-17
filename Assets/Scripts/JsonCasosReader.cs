@@ -47,5 +47,8 @@ public class JsonCasosReader : MonoBehaviour
             var test = caso.Value.ToObject<Case>();
             listaCasos.Add(caso.Value.ToObject<Case>());
         }
+
+        int quantidadeDeCasos = listaCasos.Count;
+        GameManager.Instance.quantidadeCasosJson = quantidadeDeCasos;
     }
 }

@@ -9,7 +9,11 @@ public class GameManager : MonoBehaviour
 
     public bool gameStarted;
 
-    public int casoSelecionado = 0;
+    // Informa ao sistema qual o caso selecionado pelo usuario
+    public int casoSelecionado;
+
+    // Informa ao sistem quantos Casos existem dentro do arquivo casos.json
+    public int quantidadeCasosJson;
 
     public int perguntasRespondidas;
     public int perguntasAcertadas;
