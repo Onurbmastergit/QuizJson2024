@@ -63,6 +63,27 @@ public class LocationTrigger : MonoBehaviour
     {
         // Atribua o componente JsonCasosReader no Editor ou encontre-o dinamicamente
         jsonCasosReader = FindObjectOfType<JsonCasosReader>();
+
+        if (GameManager.Instance.casos != null)
+        {
+            for (int i = 0; i < GameManager.Instance.casos.Count; i++)
+            {
+                if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado && GameManager.Instance.casos[i].CasoResolvido == 0)
+                {
+                    string pistas = GameManager.Instance.casos[i].PistasDesbloqueadas;
+
+                    string[] valores = pistas.Split(",");
+                    for (int ii = 0; ii < valores.Length; ii++)
+                    {
+                        if (ln.ToString() == valores[ii])
+                        {
+                            clueUnlocked = true;
+                            verificado.SetActive(true);
+                        }
+                    }
+                }
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -89,6 +89,29 @@ public class CaseManager : MonoBehaviour
         else Destroy(this);
     }
 
+    void Start()
+    {
+        if (GameManager.Instance.casos != null)
+        {
+            for (int i = 0; i < GameManager.Instance.casos.Count; i++)
+            {
+                Debug.Log(GameManager.Instance.casos[i].CasoID);
+
+                if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado && GameManager.Instance.casos[i].CasoResolvido == 0)
+                {
+                    string pistas = GameManager.Instance.casos[i].PistasDesbloqueadas;
+
+                    string[] valores = pistas.Split(",");
+                    for (int ii = 0; ii < valores.Length; ii++)
+                    {
+                        Debug.Log(valores[ii]);
+                        pistasDebloqueadas.Add(valores[ii]);
+                    }
+                }
+            }
+        }
+    }
+
     public void OpenMenuDica()
     {
         if (menuDica.activeSelf)
