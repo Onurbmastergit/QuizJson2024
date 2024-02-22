@@ -44,9 +44,10 @@ public class MenuInicial : MonoBehaviour
 
         text.SetActive(textenabled);
         videoImage = videoImage.GetComponent<RawImage>();
-        
+
         sound.SetActive(enabledSound);
         noSound.SetActive(!enabledSound);
+        VolumeSlider.SetActive(enabledSound);
         
         videoImage.enabled = !textenabled;
 
