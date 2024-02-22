@@ -21,12 +21,15 @@ public class MenuInicial : MonoBehaviour
     public RawImage videoImage;
     public GameObject MultimidiaButtons;
     public GameObject VolumeSlider;
+    public GameObject sound;
+    public GameObject noSound;
+    public Slider slider;
     public GameObject painelDeAviso;
     public TextMeshProUGUI descricaoCaso;
 
     public int casoNum;
     int casoNumAntigo;
-    bool enabledSound = false;
+    bool enabledSound = true;
     bool textenabled = true;
     bool temUrl = false;
     private GameManager gameManager;
@@ -41,6 +44,9 @@ public class MenuInicial : MonoBehaviour
 
         text.SetActive(textenabled);
         videoImage = videoImage.GetComponent<RawImage>();
+        
+        sound.SetActive(enabledSound);
+        noSound.SetActive(!enabledSound);
         
         videoImage.enabled = !textenabled;
 
@@ -96,7 +102,14 @@ public class MenuInicial : MonoBehaviour
 }
     void Update()
     {
-      
+        if(enabledSound == true)
+        {
+        videoPlayer.SetDirectAudioVolume(0, slider.value);
+        }
+        else if (enabledSound == false) 
+        {
+         videoPlayer.SetDirectAudioVolume(0, 0f);
+        }
     if (casoNumAntigo != casoNum)
     {
         videoPlayer.url = null;
@@ -110,7 +123,19 @@ public class MenuInicial : MonoBehaviour
     {
         temUrl = true;
     }
-       casoNumAntigo = casoNum;
+       casoNumAntigo = casoNum;    
+       
+    }
+     public void OnSliderValueChanged()
+    {
+        if (videoPlayer != null)
+        {
+            videoPlayer.SetDirectAudioVolume(0, slider.value);
+        }
+        else
+        {
+            Debug.LogWarning("VideoPlayer não atribuído ao MenuInicial.");
+        }
     }
     public void Entrar()
     {
@@ -167,7 +192,11 @@ public class MenuInicial : MonoBehaviour
         {
             yield return null;
         }
+        if(videoImage.enabled == true )
+        {
         videoPlayer.Play();
+        }
+        
     }
     else if (string.IsNullOrEmpty(videoURL[casoNum]))
     {
@@ -202,7 +231,10 @@ public class MenuInicial : MonoBehaviour
     public void EnableSound()
     {
         enabledSound = !enabledSound;
+        sound.SetActive(enabledSound);
+        noSound.SetActive(!enabledSound);
         VolumeSlider.SetActive(enabledSound);
+         
     }
     public void CloseVideoWindow()
     {
