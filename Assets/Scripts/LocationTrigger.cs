@@ -69,7 +69,7 @@ public class LocationTrigger : MonoBehaviour
             for (int i = 0; i < GameManager.Instance.casos.Count; i++)
             {
                 if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado &&
-                    GameManager.Instance.casos[i].PistasDesbloqueadas != null)
+                    GameManager.Instance.casos[i].PistasDesbloqueadas != "")
                 {
                     string pistas = GameManager.Instance.casos[i].PistasDesbloqueadas;
 

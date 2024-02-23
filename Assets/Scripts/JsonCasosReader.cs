@@ -47,7 +47,8 @@ public class JsonCasosReader : MonoBehaviour
     IEnumerator Start()
     {
         // Cria uma solicitação (request) de busca (GET) usando UnityWebRequest
-        UnityWebRequest request = UnityWebRequest.Get("https://conradosaud.com.br/outros/game_detetive/json/casos.json");
+        UnityWebRequest request = UnityWebRequest.Get("https://conradosaud.com.br/outros/game_detetive/casos.json");
+        request.SetRequestHeader("Cache-Control", "no-cache");
 
         // Envia a solicitação e aguarda a resposta
         yield return request.SendWebRequest();
@@ -82,5 +83,7 @@ public class JsonCasosReader : MonoBehaviour
         {
             GameManager.Instance.listaIntro.Add(listaCasos[i].url_intro);
         }
+
+        GameManager.Instance.gameStarted = false;
     }
 }

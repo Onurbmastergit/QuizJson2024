@@ -15,36 +15,27 @@ public class MenuInicial : MonoBehaviour
     private JsonCasosReader jsonCasosReader;
 
     public GameObject painelInicial;
-    public GameObject PainelvideoETexto;
-    public GameObject text;
-    public VideoPlayer videoPlayer;
-    public RawImage videoImage;
-    public GameObject MultimidiaButtons;
-    public GameObject VolumeSlider;
-    public GameObject sound;
-    public GameObject noSound;
-    public Slider slider;
-    public GameObject painelDeAviso;
-    public TextMeshProUGUI descricaoCaso;
+    public GameObject painelIntro;
+    public GameObject painelVideo;
 
-    public int casoNum;
-    int casoNumAntigo;
-    bool enabledSound = true;
-    bool textenabled = true;
-    bool temUrl = false;
+    public GameObject descricaoCaso;
+    public TextMeshProUGUI descricaoCasoText;
+
+    public VideoPlayer videoPlayer;
+    public RawImage videoThumbnail;
+
+    public Slider slider;
+    public GameObject volumeSlider;
+    public GameObject sound;
+
+    public GameObject playButton;
+    public GameObject pauseButton;
+    public GameObject backButton;
+    public GameObject videoButton;
 
     private void Start()
     {
         jsonCasosReader = FindObjectOfType<JsonCasosReader>();
-
-        text.SetActive(textenabled);
-        videoImage = videoImage.GetComponent<RawImage>();
-
-        sound.SetActive(enabledSound);
-        noSound.SetActive(!enabledSound);
-        VolumeSlider.SetActive(enabledSound);
-        
-        videoImage.enabled = !textenabled;
 
         if (!GameManager.Instance.gameStarted)
         {
@@ -56,11 +47,33 @@ public class MenuInicial : MonoBehaviour
 
         StartCoroutine(PreloadVideos());
     }
-    IEnumerator PreloadVideos()
-{
-    foreach (string url in GameManager.Instance.listaIntro)
+    void Update()
     {
-        if (!string.IsNullOrEmpty(url))
+        videoPlayer.SetDirectAudioVolume(0, slider.value);
+    }
+
+    #region Acoes Menu Inicial
+    public void Entrar()
+    {
+        painelInicial.SetActive(false);
+    }
+
+    public void Sair()
+    {
+        Debug.Log("Comando: sair da pagina web atual para a desejada");
+        Application.OpenURL("https://www.example.com");
+    }
+
+    public void Voltar()
+    {
+        painelInicial.SetActive(true);
+    }
+    #endregion
+
+    #region Menu Painel Intro
+    IEnumerator PreloadVideos()
+    {
+        foreach (string url in GameManager.Instance.listaIntro)
         {
             using (UnityWebRequest www = UnityWebRequest.Get(url))
             {
@@ -79,110 +92,50 @@ public class MenuInicial : MonoBehaviour
             }
         }
     }
-}
-    void Update()
-    {
-        if(enabledSound == true)
-        {
-        videoPlayer.SetDirectAudioVolume(0, slider.value);
-        }
-        else if (enabledSound == false) 
-        {
-         videoPlayer.SetDirectAudioVolume(0, 0f);
-        }
-    if (casoNumAntigo != casoNum)
-    {
-        videoPlayer.url = null;
-        videoPlayer.url = GameManager.Instance.listaIntro[casoNum];
-    }
-    if(string.IsNullOrEmpty(GameManager.Instance.listaIntro[casoNum]))
-    {
-        temUrl = false;
-    }
-    else
-    {
-        temUrl = true;
-    }
-       casoNumAntigo = casoNum;    
-       
-    }
-     public void OnSliderValueChanged()
-    {
-        if (videoPlayer != null)
-        {
-            videoPlayer.SetDirectAudioVolume(0, slider.value);
-        }
-        else
-        {
-            Debug.LogWarning("VideoPlayer não atribuído ao MenuInicial.");
-        }
-    }
-    public void Entrar()
-    {
-        painelInicial.SetActive(false);
-    }
-
-    public void Sair()
-    {
-        Debug.Log("Comando: sair da pagina web atual para a desejada");
-        Application.OpenURL("https://www.example.com");
-    }
-
-    public void Voltar()
-    {
-        painelInicial.SetActive(true);
-    }
 
     public void CasoSelecionado(int i)
     {
-        casoNum = i;
-        if(GameManager.Instance == null)
-        {
-            return;
-        }
         GameManager.Instance.casoSelecionado = i;
         Debug.Log($"Caso Selecionado: {i}");
-        if (i < jsonCasosReader.listaCasos.Count)
+        descricaoCasoText.text = jsonCasosReader.listaCasos[i].pergunta;
+
+        if (jsonCasosReader.listaCasos[i].url_intro == "" || jsonCasosReader.listaCasos[i].url_intro == null)
         {
-            descricaoCaso.text = jsonCasosReader.listaCasos[i].pergunta;
+            videoButton.SetActive(false);
         }
-        else
-        {
-            Debug.LogError("Índice de caso selecionado fora dos limites!");
-        }
+    }
+
+    public void OnSliderValueChanged()
+    {
+        videoPlayer.SetDirectAudioVolume(0, slider.value);
     }
 
     public void StartGame()
     {
-         PainelvideoETexto.SetActive(true);
+        painelIntro.SetActive(true);
 
         // Inicia a corrotina para reproduzir o vídeo antes de iniciar o jogo
         StartCoroutine(PlayVideoAndLoadScene());
-       
     }
+
     IEnumerator PlayVideoAndLoadScene()
     {
-       if (!string.IsNullOrEmpty(GameManager.Instance.listaIntro[casoNum]))
-    {
-        temUrl = true;
-        videoPlayer.url = GameManager.Instance.listaIntro[casoNum];
+        if (GameManager.Instance.listaIntro[GameManager.Instance.casoSelecionado] == null) yield break;
+
+        videoPlayer.url = GameManager.Instance.listaIntro[GameManager.Instance.casoSelecionado];
         videoPlayer.Prepare();
 
         while (!videoPlayer.isPrepared)
         {
             yield return null;
         }
-        if(videoImage.enabled == true )
+
+        if (videoThumbnail.enabled == true)
         {
-        videoPlayer.Play();
+            videoPlayer.Play();
         }
-        
     }
-    else if (string.IsNullOrEmpty(GameManager.Instance.listaIntro[casoNum]))
-    {
-        temUrl = false;
-    }
-}
+
     public void GameStart()
     {
         SceneManager.LoadScene("Game");
@@ -191,12 +144,17 @@ public class MenuInicial : MonoBehaviour
     public void PlayButton()
     {
         videoPlayer.Play();
-
+        playButton.SetActive(!playButton.activeSelf);
+        pauseButton.SetActive(!pauseButton.activeSelf);
     }
+
     public void PauseButton()
     {
         videoPlayer.Pause();
+        playButton.SetActive(!playButton.activeSelf);
+        pauseButton.SetActive(!pauseButton.activeSelf);
     }
+
     public void RestartButton()
     {
          // Parar o vídeo
@@ -208,41 +166,22 @@ public class MenuInicial : MonoBehaviour
         // Reproduzir o vídeo novamente
         videoPlayer.Play();
     }
+
     public void EnableSound()
     {
-        enabledSound = !enabledSound;
-        sound.SetActive(enabledSound);
-        noSound.SetActive(!enabledSound);
-        VolumeSlider.SetActive(enabledSound);
-         
+        volumeSlider.SetActive(!volumeSlider.activeSelf);
     }
-    public void CloseVideoWindow()
+
+    public void ButtonVideoWindow()
     {
-        textenabled = true;
-        text.SetActive(textenabled);
-        videoImage.enabled = false;
-        MultimidiaButtons.SetActive(false);
-        painelDeAviso.SetActive(false);
-        videoPlayer.url = null;
-        PainelvideoETexto.SetActive(false);
+        painelVideo.SetActive(!painelVideo.activeSelf);
+        backButton.SetActive(!backButton.activeSelf);
+        descricaoCaso.SetActive(!descricaoCaso.activeSelf);
     }
-    public void EnableTextOrVideo()
+
+    public void CloseIntro()
     {
-        textenabled = !textenabled;
-        if(temUrl == true)
-        {
-        text.SetActive(textenabled);
-        videoImage.enabled = !textenabled;
-        MultimidiaButtons.SetActive(!textenabled);
-        painelDeAviso.SetActive(!temUrl);
-        }
-        else if(temUrl == false)
-        {
-        text.SetActive(textenabled);    
-        videoImage.enabled = temUrl;
-        MultimidiaButtons.SetActive(temUrl);
-        painelDeAviso.SetActive(!textenabled);
-        }
+        painelIntro.SetActive(false);
     }
-  
+    #endregion
 }
