@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public int perguntasRespondidas;
     public int perguntasAcertadas;
 
+    public List<string> listaIntro = new List<string>();
+
     public class Caso
     {
         public int CasoID { get; set; }

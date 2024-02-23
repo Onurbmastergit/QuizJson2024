@@ -13,18 +13,41 @@ public class JsonCasosReader : MonoBehaviour
     {
         public string nome_do_caso;
         public string pergunta;
-        public int resposta_correta;
-        public string[] opcoes;
+        public string url_intro;
+        public string resposta_correta;
+        public string comentario;
+        public List<Options> opcoes = new List<Options>();
 
-        public Dictionary<string, string> pistas = new Dictionary<string, string>();
+        public List<Clues> pistas = new List<Clues>();
     }
-   public string url = "https://conradosaud.com.br/outros/game_detetive/casos.json";
+
+    [Serializable]
+    public class Options
+    {
+        public string alternativa;
+        public string resposta;
+    }
+
+    [Serializable]
+    public class Clues
+    {
+        public string local;
+        public string text;
+        public List<URL> image = new List<URL>();
+    }
+
+    [Serializable]
+    public class URL
+    {
+        public string url;
+    }
+
     public List<Case> listaCasos = new List<Case>();
 
     IEnumerator Start()
     {
         // Cria uma solicitação (request) de busca (GET) usando UnityWebRequest
-        UnityWebRequest request = UnityWebRequest.Get(url);
+        UnityWebRequest request = UnityWebRequest.Get("https://conradosaud.com.br/outros/game_detetive/json/casos.json");
 
         // Envia a solicitação e aguarda a resposta
         yield return request.SendWebRequest();
@@ -52,9 +75,12 @@ public class JsonCasosReader : MonoBehaviour
             listaCasos.Add(casoObjeto);
         }
 
-Debug.Log("Quantidade de casos carregados: " + listaCasos.Count);
-
         // Atualiza a quantidade de casos no GameManager
         GameManager.Instance.quantidadeCasosJson = listaCasos.Count;
+
+        for (int i = 0; i < listaCasos.Count; i++)
+        {
+            GameManager.Instance.listaIntro.Add(listaCasos[i].url_intro);
+        }
     }
 }

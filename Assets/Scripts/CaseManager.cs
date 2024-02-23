@@ -97,7 +97,8 @@ public class CaseManager : MonoBehaviour
         {
             for (int i = 0; i < GameManager.Instance.casos.Count; i++)
             {
-                if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado)
+                if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado &&
+                    GameManager.Instance.casos[i].PistasDesbloqueadas != null)
                 {
                     Debug.Log($"Acessando save Caso: {GameManager.Instance.casos[i].CasoID}\n" +
                         $"PistasDesbloqueadas: {GameManager.Instance.casos[i].PistasDesbloqueadas}");
@@ -116,7 +117,7 @@ public class CaseManager : MonoBehaviour
 
             if (indexCasoID == -1)
             {
-                Caso novoCaso = new Caso(GameManager.Instance.casoSelecionado, "", 0);
+                Caso novoCaso = new Caso(GameManager.Instance.casoSelecionado, null, 0);
                 GameManager.Instance.casos.Add(novoCaso);
 
                 indexCasoID = GameManager.Instance.casos.Count - 1;

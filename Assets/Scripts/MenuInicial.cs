@@ -32,11 +32,6 @@ public class MenuInicial : MonoBehaviour
     bool enabledSound = true;
     bool textenabled = true;
     bool temUrl = false;
-    private GameManager gameManager;
-    
-
-    public List<string> videoURL = new List<string>();
-
 
     private void Start()
     {
@@ -51,22 +46,6 @@ public class MenuInicial : MonoBehaviour
         
         videoImage.enabled = !textenabled;
 
-        gameManager = GameManager.Instance;
-        
-        if (gameManager != null)
-        {
-            videoURL = new List<string>();
-            for (int i = 0; i < gameManager.quantidadeCasosJson; i++)
-            {
-                // Adiciona uma URL vazia para cada caso
-                videoURL.Add("");
-            }
-        }
-        else
-        {
-            Debug.LogError("GameManager não encontrado!");
-        }
-
         if (!GameManager.Instance.gameStarted)
         {
             painelInicial.SetActive(true);
@@ -79,7 +58,7 @@ public class MenuInicial : MonoBehaviour
     }
     IEnumerator PreloadVideos()
 {
-    foreach (string url in videoURL)
+    foreach (string url in GameManager.Instance.listaIntro)
     {
         if (!string.IsNullOrEmpty(url))
         {
@@ -114,9 +93,9 @@ public class MenuInicial : MonoBehaviour
     if (casoNumAntigo != casoNum)
     {
         videoPlayer.url = null;
-        videoPlayer.url = videoURL[casoNum];
+        videoPlayer.url = GameManager.Instance.listaIntro[casoNum];
     }
-    if(string.IsNullOrEmpty(videoURL[casoNum]))
+    if(string.IsNullOrEmpty(GameManager.Instance.listaIntro[casoNum]))
     {
         temUrl = false;
     }
@@ -183,10 +162,10 @@ public class MenuInicial : MonoBehaviour
     }
     IEnumerator PlayVideoAndLoadScene()
     {
-       if (!string.IsNullOrEmpty(videoURL[casoNum]))
+       if (!string.IsNullOrEmpty(GameManager.Instance.listaIntro[casoNum]))
     {
         temUrl = true;
-        videoPlayer.url = videoURL[casoNum];
+        videoPlayer.url = GameManager.Instance.listaIntro[casoNum];
         videoPlayer.Prepare();
 
         while (!videoPlayer.isPrepared)
@@ -199,7 +178,7 @@ public class MenuInicial : MonoBehaviour
         }
         
     }
-    else if (string.IsNullOrEmpty(videoURL[casoNum]))
+    else if (string.IsNullOrEmpty(GameManager.Instance.listaIntro[casoNum]))
     {
         temUrl = false;
     }

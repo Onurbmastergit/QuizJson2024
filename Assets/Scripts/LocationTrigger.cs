@@ -68,7 +68,8 @@ public class LocationTrigger : MonoBehaviour
         {
             for (int i = 0; i < GameManager.Instance.casos.Count; i++)
             {
-                if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado)
+                if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado &&
+                    GameManager.Instance.casos[i].PistasDesbloqueadas != null)
                 {
                     string pistas = GameManager.Instance.casos[i].PistasDesbloqueadas;
 
@@ -132,7 +133,7 @@ public class LocationTrigger : MonoBehaviour
 
         var casoAtual = jsonCasosReader.listaCasos[casoSelecionado];
 
-        pista.text = casoAtual.pistas[localAtual.ToString()];
+        pista.text = casoAtual.pistas[(int)localAtual].text;
 
         local.text = nomeLocais[(int)localAtual];
     }

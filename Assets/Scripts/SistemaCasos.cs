@@ -39,11 +39,11 @@ public class SistemaCasos : MonoBehaviour
         casoNome1.text = casoNome.text;
         casoDescricao1.text = casoDescricao.text;
 
-        casoOpcao0.text = casoAtual.opcoes[0].ToString();
-        casoOpcao1.text = casoAtual.opcoes[1].ToString();
-        casoOpcao2.text = casoAtual.opcoes[2].ToString();
-        casoOpcao3.text = casoAtual.opcoes[3].ToString();
-        casoOpcao4.text = casoAtual.opcoes[4].ToString();
+        casoOpcao0.text = casoAtual.opcoes[0].resposta;
+        casoOpcao1.text = casoAtual.opcoes[1].resposta;
+        casoOpcao2.text = casoAtual.opcoes[2].resposta;
+        casoOpcao3.text = casoAtual.opcoes[3].resposta;
+        casoOpcao4.text = casoAtual.opcoes[4].resposta;
     }
 
     public void PistaSelecionadaSP(int index)
