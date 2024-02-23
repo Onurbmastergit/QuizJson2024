@@ -16,11 +16,7 @@ public class SistemaPerguntas : MonoBehaviour
     public TextMeshProUGUI perguntaText;
     public TextMeshProUGUI comentarioText;
 
-    public TextMeshProUGUI respostaOpcao0;
-    public TextMeshProUGUI respostaOpcao1;
-    public TextMeshProUGUI respostaOpcao2;
-    public TextMeshProUGUI respostaOpcao3;
-    public TextMeshProUGUI respostaOpcao4;
+    public List<TextMeshProUGUI> listaRespostas = new List<TextMeshProUGUI>();
 
     int perguntaSelecionada;
     List<int> perguntasUsadas = new List<int>();
@@ -53,12 +49,16 @@ public class SistemaPerguntas : MonoBehaviour
         perguntaText.text = perguntaAtual.pergunta.ToString();
         comentarioText.text = perguntaAtual.comentario.ToString();
 
-        respostaOpcao0.text = perguntaAtual.opcoes[0].resposta.ToString();
-        respostaOpcao1.text = perguntaAtual.opcoes[1].resposta.ToString();
-        respostaOpcao2.text = perguntaAtual.opcoes[2].resposta.ToString();
-        respostaOpcao3.text = perguntaAtual.opcoes[3].resposta.ToString();
-        respostaOpcao4.text = perguntaAtual.opcoes[4].resposta.ToString();
+        List<int> valoresDisponiveis = new List<int> { 0, 1, 2, 3, 4 };
 
+        for (int i = 0; i < valoresDisponiveis.Count; i++)
+        {
+            int indiceAleatorio = UnityEngine.Random.Range(0, valoresDisponiveis.Count);
+            int valorAleatorio = valoresDisponiveis[indiceAleatorio];
+            valoresDisponiveis.RemoveAt(indiceAleatorio);
+
+            listaRespostas[i].text = perguntaAtual.opcoes[valorAleatorio].resposta.ToString();
+        }
     }
 
     void Aleatorizador()

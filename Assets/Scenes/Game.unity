@@ -14001,7 +14001,7 @@ GameObject:
   - component: {fileID: 8309774134021199868}
   - component: {fileID: 2954789176301599626}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Alternativa 3 (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14475,7 +14475,7 @@ GameObject:
   - component: {fileID: 7357404754367152786}
   - component: {fileID: 7508175641759359172}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Alternativa 0 (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14822,7 +14822,7 @@ GameObject:
   - component: {fileID: 6071712423282102559}
   - component: {fileID: 3231132076648095802}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Alternativa 1 (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15226,6 +15226,7 @@ MonoBehaviour:
   playerScore: 0
   isMenuOpen: 0
   localAtual: 0
+  indexCasoID: -1
   clueList: []
   locations:
   - {fileID: 8278104896990089231}
@@ -17536,7 +17537,7 @@ GameObject:
   - component: {fileID: 8426428081352550474}
   - component: {fileID: 5933727252197254071}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Alternativa 4 (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20172,7 +20173,7 @@ GameObject:
   - component: {fileID: 221417678260022465}
   - component: {fileID: 8616839624415176381}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Alternativa 2 (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22620,11 +22621,12 @@ MonoBehaviour:
   score: {fileID: 1119340993}
   perguntaText: {fileID: 1139748100}
   comentarioText: {fileID: 2505034305068433279}
-  respostaOpcao0: {fileID: 7508175641759359172}
-  respostaOpcao1: {fileID: 3231132076648095802}
-  respostaOpcao2: {fileID: 8616839624415176381}
-  respostaOpcao3: {fileID: 2954789176301599626}
-  respostaOpcao4: {fileID: 5933727252197254071}
+  listaRespostas:
+  - {fileID: 7508175641759359172}
+  - {fileID: 3231132076648095802}
+  - {fileID: 8616839624415176381}
+  - {fileID: 2954789176301599626}
+  - {fileID: 5933727252197254071}
   perguntas: {fileID: 468558168}
   respostas: {fileID: 1144554199}
   comentario: {fileID: 7780431607711522265}
