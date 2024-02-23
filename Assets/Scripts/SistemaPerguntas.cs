@@ -5,6 +5,7 @@ using TMPro;
 using System;
 using UnityEngine.UI;
 using System.Threading;
+using static GameManager;
 
 public class SistemaPerguntas : MonoBehaviour
 {
@@ -76,7 +77,6 @@ public class SistemaPerguntas : MonoBehaviour
         }
 
         perguntasUsadas.Add(perguntaSelecionada);
-        Debug.Log($"Perguntas usadas: {perguntasUsadas.Count} / Perguntas total: {jsonPerguntasReader.listaPerguntas.Count}");
     }
 
     void RespostaErrada()
@@ -140,6 +140,17 @@ public class SistemaPerguntas : MonoBehaviour
                 score.text = "";
                 perguntas.SetActive(false);
                 pista.SetActive(true);
+
+                if (GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas == "")
+                {
+                    GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas += $"{CaseManager.Instance.localAtual}";
+                }
+                else
+                {
+                    GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas += $",{CaseManager.Instance.localAtual}";
+                }
+
+                Debug.Log($"Atualizando save Caso: {GameManager.Instance.casos[CaseManager.Instance.indexCasoID].CasoID} | PistasDesbloqueadas: {GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas}");
             }
 
             GerarPergunta();

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static GameManager;
 
 [DefaultExecutionOrder(-1)]
 public class CaseManager : MonoBehaviour
@@ -28,6 +29,7 @@ public class CaseManager : MonoBehaviour
     public int playerScore;
     public bool isMenuOpen;
     public locationNames localAtual;
+    public int indexCasoID = -1;
 
     public bool rodadaAtiva
     {
@@ -95,19 +97,32 @@ public class CaseManager : MonoBehaviour
         {
             for (int i = 0; i < GameManager.Instance.casos.Count; i++)
             {
-                Debug.Log(GameManager.Instance.casos[i].CasoID);
-
-                if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado && GameManager.Instance.casos[i].CasoResolvido == 0)
+                if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado)
                 {
+                    Debug.Log($"Acessando save Caso: {GameManager.Instance.casos[i].CasoID}\n" +
+                        $"PistasDesbloqueadas: {GameManager.Instance.casos[i].PistasDesbloqueadas}");
+
+                    indexCasoID = i;
+
                     string pistas = GameManager.Instance.casos[i].PistasDesbloqueadas;
 
                     string[] valores = pistas.Split(",");
                     for (int ii = 0; ii < valores.Length; ii++)
                     {
-                        Debug.Log(valores[ii]);
                         pistasDebloqueadas.Add(valores[ii]);
                     }
                 }
+            }
+
+            if (indexCasoID == -1)
+            {
+                Caso novoCaso = new Caso(GameManager.Instance.casoSelecionado, "", 0);
+                GameManager.Instance.casos.Add(novoCaso);
+
+                indexCasoID = GameManager.Instance.casos.Count - 1;
+
+                Debug.Log($"Acessando save Caso: {GameManager.Instance.casos[indexCasoID].CasoID}\n" +
+                    $"PistasDesbloqueadas: {GameManager.Instance.casos[indexCasoID].PistasDesbloqueadas}");
             }
         }
     }

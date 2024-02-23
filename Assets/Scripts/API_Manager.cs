@@ -52,8 +52,7 @@ public class API_Manager : MonoBehaviour
 
             APIPergunta pergunta = JsonConvert.DeserializeObject<APIPergunta>(webRequest.downloadHandler.text);
 
-            Debug.Log($"Save API - Id_usuario: {pergunta.id_usuario} | Perguntas respondidas: {pergunta.perguntas_respondidas} | Perguntas acertadas: {pergunta.perguntas_acertadas}");
-
+            Debug.Log($"Acessando save API - Id_usuario: {pergunta.id_usuario} | Perguntas respondidas: {pergunta.perguntas_respondidas} | Perguntas acertadas: {pergunta.perguntas_acertadas}");
             GameManager.Instance.perguntasRespondidas = pergunta.perguntas_respondidas;
             GameManager.Instance.perguntasAcertadas = pergunta.perguntas_acertadas;
         }
@@ -80,7 +79,7 @@ public class API_Manager : MonoBehaviour
 
             foreach (var caso in casos)
             {
-                Debug.Log($"Save API - Id_usuario: {caso.id_usuario} | Caso: {caso.caso} | Locais: {caso.locais} | Concluido: {caso.concluido}");
+                Debug.Log($"Acessando save API - Id_usuario: {caso.id_usuario} | Caso: {caso.caso} | Locais: {caso.locais} | Concluido: {caso.concluido}");
 
                 Caso novoCaso = new Caso(caso.caso, caso.locais, caso.concluido);
                 GameManager.Instance.casos.Add(novoCaso);

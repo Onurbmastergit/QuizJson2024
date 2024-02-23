@@ -68,7 +68,7 @@ public class LocationTrigger : MonoBehaviour
         {
             for (int i = 0; i < GameManager.Instance.casos.Count; i++)
             {
-                if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado && GameManager.Instance.casos[i].CasoResolvido == 0)
+                if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado)
                 {
                     string pistas = GameManager.Instance.casos[i].PistasDesbloqueadas;
 
@@ -89,7 +89,7 @@ public class LocationTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         CaseManager.Instance.localAtual = ln;
-        Debug.Log($"Entrando no {ln} {CaseManager.Instance.localAtual}");
+        Debug.Log($"Entrando no {CaseManager.Instance.localAtual}");
 
         CaseManager.Instance.isMenuOpen = true;
         PistaSelecionadaLT();
@@ -112,8 +112,6 @@ public class LocationTrigger : MonoBehaviour
         if (clueUnlocked)
         {
             verificado.SetActive(true);
-
-            Debug.Log($"===== Trigger: PISTA {ln} DESBLOQUEADA =====");
         }
 
         if (CaseManager.Instance.unlockResolution)
