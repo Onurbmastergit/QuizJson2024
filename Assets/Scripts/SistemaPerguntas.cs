@@ -16,7 +16,7 @@ public class SistemaPerguntas : MonoBehaviour
     public TextMeshProUGUI perguntaText;
     public TextMeshProUGUI comentarioText;
 
-    public List<TextMeshProUGUI> listaRespostas = new List<TextMeshProUGUI>();
+    int botaoCorreto;
 
     int perguntaSelecionada;
     List<int> perguntasUsadas = new List<int>();
@@ -49,16 +49,41 @@ public class SistemaPerguntas : MonoBehaviour
         perguntaText.text = perguntaAtual.pergunta.ToString();
         comentarioText.text = perguntaAtual.comentario.ToString();
 
-        List<int> valoresDisponiveis = new List<int> { 0, 1, 2, 3, 4 };
+        #region Sistema para gerar e embaralhar as respostas
+        // Destroi as alternativas passadas
+        foreach (Transform child in respostas.transform)
+        {
+            Destroy(child.gameObject);
+        }
 
-        for (int i = 0; i < valoresDisponiveis.Count; i++)
+        // Contador de numero de alternativas atraves do perguntas.json
+        int count = perguntaAtual.opcoes.Count;
+
+        List<int> valoresDisponiveis = new List<int>();
+        for (int i = 0; i < count; i++)
+        {
+            valoresDisponiveis.Add(i);
+        }
+
+        // Aleatoriza a ordem da qual os botoes serao instanciados
+        for (int i = 0; i < count; i++)
         {
             int indiceAleatorio = UnityEngine.Random.Range(0, valoresDisponiveis.Count);
             int valorAleatorio = valoresDisponiveis[indiceAleatorio];
             valoresDisponiveis.RemoveAt(indiceAleatorio);
 
-            listaRespostas[i].text = perguntaAtual.opcoes[valorAleatorio].resposta.ToString();
+            ButtonAlternativa.Spawn(respostas.transform, valorAleatorio, perguntaAtual.opcoes[valorAleatorio].resposta, false);
         }
+
+        List<string> indexLetra = new List<string>() { "a", "b", "c", "d", "e", "f", "g", "h" };
+        for (int i = 0;i < indexLetra.Count; i++)
+        {
+            if (perguntaAtual.resposta_correta == indexLetra[i])
+            {
+                botaoCorreto = i; break;
+            }
+        }
+        #endregion
     }
 
     void Aleatorizador()
@@ -79,11 +104,56 @@ public class SistemaPerguntas : MonoBehaviour
         perguntasUsadas.Add(perguntaSelecionada);
     }
 
+    public void ClicarBotaoAlternativa(int alternativa)
+    {
+        GameManager.Instance.perguntasRespondidas++;
+
+        Thread.Sleep(250);
+
+        if (alternativa == botaoCorreto)
+        {
+            Thread.Sleep(250);
+            GameManager.Instance.perguntasAcertadas++;
+            CaseManager.Instance.playerScore++;
+            score.text = score.text + "* ";
+
+            if (CaseManager.Instance.playerScore >= 10)
+            {
+                CaseManager.Instance.playerScore = 0;
+                score.text = "";
+                perguntas.SetActive(false);
+                pista.SetActive(true);
+                CaseManager.Instance.totalPistas++;
+
+                if (GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas == "")
+                {
+                    GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas += $"{CaseManager.Instance.localAtual}";
+                }
+                else
+                {
+                    GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas += $",{CaseManager.Instance.localAtual}";
+                }
+
+                Debug.Log($"Atualizando save Caso: {GameManager.Instance.casos[CaseManager.Instance.indexCasoID].CasoID} | PistasDesbloqueadas: {GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas}");
+            }
+
+            GerarPergunta();
+        }
+        else RespostaErrada();
+    }
+
     void RespostaErrada()
     {
         timer = -1;
         respostas.SetActive(false);
         comentario.SetActive(true);
+    }
+
+    public void FecharComentario()
+    {
+        respostas.SetActive(true);
+        comentario.SetActive(false);
+        GerarPergunta();
     }
 
     IEnumerator Timer()
@@ -117,52 +187,5 @@ public class SistemaPerguntas : MonoBehaviour
 
             yield return new WaitForFixedUpdate();
         }
-    }
-
-    public void BotaoResposta(string alternativa)
-    {
-        var respostaCorreta = jsonPerguntasReader.listaPerguntas[perguntaSelecionada].resposta_correta;
-
-        GameManager.Instance.perguntasRespondidas++;
-
-        Thread.Sleep(250);
-
-        if (respostaCorreta == alternativa)
-        {
-            Thread.Sleep(250);
-            GameManager.Instance.perguntasAcertadas++;
-            CaseManager.Instance.playerScore++;
-            score.text = score.text + "* ";
-
-            if (CaseManager.Instance.playerScore >= 10)
-            {
-                CaseManager.Instance.playerScore = 0;
-                score.text = "";
-                perguntas.SetActive(false);
-                pista.SetActive(true);
-                CaseManager.Instance.totalPistas++;
-
-                if (GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas == "")
-                {
-                    GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas += $"{CaseManager.Instance.localAtual}";
-                }
-                else
-                {
-                    GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas += $",{CaseManager.Instance.localAtual}";
-                }
-
-                Debug.Log($"Atualizando save Caso: {GameManager.Instance.casos[CaseManager.Instance.indexCasoID].CasoID} | PistasDesbloqueadas: {GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas}");
-            }
-
-            GerarPergunta();
-        }
-        else RespostaErrada();
-    }
-
-    public void FecharComentario()
-    {
-        respostas.SetActive(true);
-        comentario.SetActive(false);
-        GerarPergunta();
     }
 }

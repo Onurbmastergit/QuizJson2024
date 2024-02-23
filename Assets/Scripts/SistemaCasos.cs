@@ -5,6 +5,8 @@ using TMPro;
 using System;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Threading;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class SistemaCasos : MonoBehaviour
 {
@@ -15,18 +17,19 @@ public class SistemaCasos : MonoBehaviour
     public TextMeshProUGUI casoNome1;
     public TextMeshProUGUI casoDescricao1;
 
-    public TextMeshProUGUI casoOpcao0;
-    public TextMeshProUGUI casoOpcao1;
-    public TextMeshProUGUI casoOpcao2;
-    public TextMeshProUGUI casoOpcao3;
-    public TextMeshProUGUI casoOpcao4;
-
     public GameObject painelPistaRecolhida;
 
     public TextMeshProUGUI contadorPistas;
     public TextMeshProUGUI instrucaoCaso;
     public GameObject instrucao;
     public GameObject liberarResposta;
+
+    public GameObject painelWin;
+    public GameObject painelOver;
+    public GameObject painelRespostaCaso;
+    public GameObject respostasCaso;
+
+    int botaoCorreto;
 
     void Start()
     {
@@ -42,11 +45,48 @@ public class SistemaCasos : MonoBehaviour
         casoNome1.text = casoNome.text;
         casoDescricao1.text = casoDescricao.text;
 
-        casoOpcao0.text = casoAtual.opcoes[0].resposta;
-        casoOpcao1.text = casoAtual.opcoes[1].resposta;
-        casoOpcao2.text = casoAtual.opcoes[2].resposta;
-        casoOpcao3.text = casoAtual.opcoes[3].resposta;
-        casoOpcao4.text = casoAtual.opcoes[4].resposta;
+        // Contador de numero de alternativas atraves do perguntas.json
+        int count = casoAtual.opcoes.Count;
+
+        List<int> valoresDisponiveis = new List<int>();
+        for (int i = 0; i < count; i++)
+        {
+            valoresDisponiveis.Add(i);
+        }
+
+        // Aleatoriza a ordem da qual os botoes serao instanciados
+        for (int i = 0; i < count; i++)
+        {
+            int indiceAleatorio = UnityEngine.Random.Range(0, valoresDisponiveis.Count);
+            int valorAleatorio = valoresDisponiveis[indiceAleatorio];
+            valoresDisponiveis.RemoveAt(indiceAleatorio);
+
+            ButtonAlternativa.Spawn(respostasCaso.transform, valorAleatorio, casoAtual.opcoes[valorAleatorio].resposta.ToString(), true);
+        }
+
+        List<string> indexLetra = new List<string>() { "a", "b", "c", "d", "e", "f", "g", "h" };
+        for (int i = 0; i < indexLetra.Count; i++)
+        {
+            if (casoAtual.resposta_correta == indexLetra[i])
+            {
+                botaoCorreto = i; break;
+            }
+        }
+    }
+    public void ClicarBotaoAlternativa(int alternativa)
+    {
+        Thread.Sleep(250);
+
+        if (alternativa == botaoCorreto)
+        {
+            painelRespostaCaso.SetActive(false);
+            painelWin.SetActive(true);
+        }
+        else
+        {
+            painelRespostaCaso.SetActive(false);
+            painelOver.SetActive(true);
+        }
     }
 
     public void PistaSelecionadaSP(int index)
@@ -60,7 +100,6 @@ public class SistemaCasos : MonoBehaviour
     }
 
     public GameObject[] locais; // Adicione todos os seus GameObjects aqui no Editor Unity
-
     public void DesbloquearPistas()
     {
         for (int i = 0; i < locais.Length; i++)
@@ -98,22 +137,6 @@ public class SistemaCasos : MonoBehaviour
         {
             
         }
-    }
-
-    public GameObject painelWin;
-    public GameObject painelOver;
-    public GameObject painelRespostaCaso;
-
-    public void RepostaCasoCerta()
-    {
-        painelRespostaCaso.SetActive(false);
-        painelWin.SetActive(true);
-    }
-
-    public void RepostaCasoErrada()
-    {
-        painelRespostaCaso.SetActive(false);
-        painelOver.SetActive(true);
     }
 
     public void BackToMenu()
