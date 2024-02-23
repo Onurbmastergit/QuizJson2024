@@ -16,6 +16,7 @@ public class SistemaCasos : MonoBehaviour
     public TextMeshProUGUI casoDescricao;
     public TextMeshProUGUI casoNome1;
     public TextMeshProUGUI casoDescricao1;
+    public TextMeshProUGUI comentarioCaso;
 
     public GameObject painelPistaRecolhida;
 
@@ -40,10 +41,11 @@ public class SistemaCasos : MonoBehaviour
 
         var casoAtual = jsonCasosReader.listaCasos[casoSelecionado];
 
-        casoNome.text = casoAtual.nome_do_caso.ToString();
-        casoDescricao.text = casoAtual.pergunta.ToString();
+        casoNome.text = casoAtual.nome_do_caso;
+        casoDescricao.text = casoAtual.pergunta;
         casoNome1.text = casoNome.text;
         casoDescricao1.text = casoDescricao.text;
+        comentarioCaso.text = casoAtual.comentario;
 
         // Contador de numero de alternativas atraves do perguntas.json
         int count = casoAtual.opcoes.Count;
