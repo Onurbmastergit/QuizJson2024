@@ -124,6 +124,16 @@ public class MenuInicial : MonoBehaviour
     {
         temUrl = true;
     }
+     Debug.Log("casoNum: " + casoNum);
+    
+    if (enabledSound == true)
+    {
+        videoPlayer.SetDirectAudioVolume(0, slider.value);
+    }
+    else if (enabledSound == false)
+    {
+        videoPlayer.SetDirectAudioVolume(0, 0f);
+    }
        casoNumAntigo = casoNum;    
        
     }
@@ -264,6 +274,10 @@ public class MenuInicial : MonoBehaviour
         MultimidiaButtons.SetActive(temUrl);
         painelDeAviso.SetActive(!textenabled);
         }
+        if(textenabled == true)
+        {
+        videoPlayer.Stop();
+        }    
     }
   
 }
