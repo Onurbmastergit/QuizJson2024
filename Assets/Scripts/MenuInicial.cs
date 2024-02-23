@@ -52,25 +52,22 @@ public class MenuInicial : MonoBehaviour
         videoPlayer.SetDirectAudioVolume(0, slider.value);
     }
 
-    #region Acoes Menu Inicial
+    // =====   Acoes Menu Inicial   =====
     public void Entrar()
     {
         painelInicial.SetActive(false);
     }
-
     public void Sair()
     {
         Debug.Log("Comando: sair da pagina web atual para a desejada");
         Application.OpenURL("https://www.example.com");
     }
-
     public void Voltar()
     {
         painelInicial.SetActive(true);
     }
-    #endregion
 
-    #region Menu Painel Intro
+    // =====   Menu Painel Intro   =====
     IEnumerator PreloadVideos()
     {
         foreach (string url in GameManager.Instance.listaIntro)
@@ -99,10 +96,13 @@ public class MenuInicial : MonoBehaviour
         Debug.Log($"Caso Selecionado: {i}");
         descricaoCasoText.text = jsonCasosReader.listaCasos[i].pergunta;
 
+        Debug.Log($"URL Intro: {jsonCasosReader.listaCasos[i].url_intro}");
+
         if (jsonCasosReader.listaCasos[i].url_intro == "" || jsonCasosReader.listaCasos[i].url_intro == null)
         {
             videoButton.SetActive(false);
         }
+        else videoButton.SetActive(true);
     }
 
     public void OnSliderValueChanged()
@@ -183,5 +183,4 @@ public class MenuInicial : MonoBehaviour
     {
         painelIntro.SetActive(false);
     }
-    #endregion
 }

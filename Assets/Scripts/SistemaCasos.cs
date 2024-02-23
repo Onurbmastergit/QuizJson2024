@@ -24,6 +24,9 @@ public class SistemaCasos : MonoBehaviour
     public GameObject painelPistaRecolhida;
 
     public TextMeshProUGUI contadorPistas;
+    public TextMeshProUGUI instrucaoCaso;
+    public GameObject instrucao;
+    public GameObject liberarResposta;
 
     void Start()
     {
@@ -82,7 +85,19 @@ public class SistemaCasos : MonoBehaviour
             }
         }
 
-        contadorPistas.text = $"{CaseManager.Instance.pistasDebloqueadas.Count} / {locais.Length}";
+        contadorPistas.text = $"{CaseManager.Instance.totalPistas} / {locais.Length}";
+        instrucaoCaso.text = $"Recolha mais {12 - CaseManager.Instance.totalPistas} pistas para tentar solucionar o caso";
+
+        if (CaseManager.Instance.unlockResolution)
+        {
+            instrucao.SetActive(false);
+            liberarResposta.SetActive(true);
+        }
+
+        if (CaseManager.Instance.allVisited)
+        {
+            
+        }
     }
 
     public GameObject painelWin;

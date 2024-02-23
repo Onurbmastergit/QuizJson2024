@@ -140,6 +140,7 @@ public class SistemaPerguntas : MonoBehaviour
                 score.text = "";
                 perguntas.SetActive(false);
                 pista.SetActive(true);
+                CaseManager.Instance.totalPistas++;
 
                 if (GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas == "")
                 {

@@ -58,29 +58,26 @@ public class LocationTrigger : MonoBehaviour
         "Repouso Médico"
     };
 
-
     void Start()
     {
         // Atribua o componente JsonCasosReader no Editor ou encontre-o dinamicamente
         jsonCasosReader = FindObjectOfType<JsonCasosReader>();
 
-        if (GameManager.Instance.casos != null)
+        for (int i = 0; i < GameManager.Instance.casos.Count; i++)
         {
-            for (int i = 0; i < GameManager.Instance.casos.Count; i++)
+            if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado &&
+                GameManager.Instance.casos[i].PistasDesbloqueadas != "")
             {
-                if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado &&
-                    GameManager.Instance.casos[i].PistasDesbloqueadas != "")
-                {
-                    string pistas = GameManager.Instance.casos[i].PistasDesbloqueadas;
+                string pistas = GameManager.Instance.casos[i].PistasDesbloqueadas;
 
-                    string[] valores = pistas.Split(",");
-                    for (int ii = 0; ii < valores.Length; ii++)
+                string[] valores = pistas.Split(",");
+                for (int ii = 0; ii < valores.Length; ii++)
+                {
+                    if (ln.ToString() == valores[ii])
                     {
-                        if (ln.ToString() == valores[ii])
-                        {
-                            clueUnlocked = true;
-                            verificado.SetActive(true);
-                        }
+                        clueUnlocked = true;
+                        verificado.SetActive(true);
+                        CaseManager.Instance.totalPistas++;
                     }
                 }
             }
@@ -113,16 +110,6 @@ public class LocationTrigger : MonoBehaviour
         if (clueUnlocked)
         {
             verificado.SetActive(true);
-        }
-
-        if (CaseManager.Instance.unlockResolution)
-        {
-            Debug.Log("===== Trigger: LIBERA O CASO FINAL =====");
-        }
-
-        if (CaseManager.Instance.allVisited)
-        {
-            Debug.Log("===== Trigger: TELA DE CASO FINAL =====");
         }
     }
 

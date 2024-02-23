@@ -24,6 +24,7 @@ public class CaseManager : MonoBehaviour
     public GameObject painelResponderCaso;
 
     public List<string> pistasDebloqueadas = new List<string>();
+    public int totalPistas;
 
     public bool gameStarted;
     public int playerScore;
@@ -93,38 +94,35 @@ public class CaseManager : MonoBehaviour
 
     void Start()
     {
-        if (GameManager.Instance.casos != null)
+        for (int i = 0; i < GameManager.Instance.casos.Count; i++)
         {
-            for (int i = 0; i < GameManager.Instance.casos.Count; i++)
+            if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado &&
+                GameManager.Instance.casos[i].PistasDesbloqueadas != "")
             {
-                if (GameManager.Instance.casos[i].CasoID == GameManager.Instance.casoSelecionado &&
-                    GameManager.Instance.casos[i].PistasDesbloqueadas != "")
+                Debug.Log($"Acessando save Caso: {GameManager.Instance.casos[i].CasoID}\n" +
+                    $"PistasDesbloqueadas: {GameManager.Instance.casos[i].PistasDesbloqueadas}");
+
+                indexCasoID = i;
+
+                string pistas = GameManager.Instance.casos[i].PistasDesbloqueadas;
+
+                string[] valores = pistas.Split(",");
+                for (int ii = 0; ii < valores.Length; ii++)
                 {
-                    Debug.Log($"Acessando save Caso: {GameManager.Instance.casos[i].CasoID}\n" +
-                        $"PistasDesbloqueadas: {GameManager.Instance.casos[i].PistasDesbloqueadas}");
-
-                    indexCasoID = i;
-
-                    string pistas = GameManager.Instance.casos[i].PistasDesbloqueadas;
-
-                    string[] valores = pistas.Split(",");
-                    for (int ii = 0; ii < valores.Length; ii++)
-                    {
-                        pistasDebloqueadas.Add(valores[ii]);
-                    }
+                    pistasDebloqueadas.Add(valores[ii]);
                 }
             }
+        }
 
-            if (indexCasoID == -1)
-            {
-                Caso novoCaso = new Caso(GameManager.Instance.casoSelecionado, "", 0);
-                GameManager.Instance.casos.Add(novoCaso);
+        if (indexCasoID == -1)
+        {
+            Caso novoCaso = new Caso(GameManager.Instance.casoSelecionado, "", 0);
+            GameManager.Instance.casos.Add(novoCaso);
 
-                indexCasoID = GameManager.Instance.casos.Count - 1;
+            indexCasoID = GameManager.Instance.casos.Count - 1;
 
-                Debug.Log($"Acessando save Caso: {GameManager.Instance.casos[indexCasoID].CasoID}\n" +
-                    $"PistasDesbloqueadas: {GameManager.Instance.casos[indexCasoID].PistasDesbloqueadas}");
-            }
+            Debug.Log($"Acessando save Caso: {GameManager.Instance.casos[indexCasoID].CasoID}\n" +
+                $"PistasDesbloqueadas: {GameManager.Instance.casos[indexCasoID].PistasDesbloqueadas}");
         }
     }
 
