@@ -34,6 +34,10 @@ public class MenuInicial : MonoBehaviour
     public GameObject videoButton;
     public GameObject MultimidiaButtons;
 
+    public GameObject newGame;
+    public GameObject continueGame;
+    public int idListaCasos;
+
     bool videoEnabled = false;
 
     private void Start()
@@ -82,8 +86,6 @@ public class MenuInicial : MonoBehaviour
             using (UnityWebRequest www = UnityWebRequest.Get(url))
             {
                 yield return www.SendWebRequest();
-
-                
             }
         }
     }
@@ -99,12 +101,29 @@ public class MenuInicial : MonoBehaviour
         if (jsonCasosReader.listaCasos[i].url_intro == "" || jsonCasosReader.listaCasos[i].url_intro == null)
         {
             videoButton.SetActive(false);
-            
         }
         else
         { 
             videoButton.SetActive(true);
-        
+        }
+
+        // Verifica se existe um save na fase selecionada
+        for (int j = 0; j < GameManager.Instance.casos.Count; j++)
+        {
+            if (GameManager.Instance.casos[j].CasoID != i) continue;
+
+            idListaCasos = j;
+
+            if (GameManager.Instance.casos[j].PistasDesbloqueadas == "" || GameManager.Instance.casos[j].PistasDesbloqueadas == null)
+            {
+                newGame.SetActive(true);
+                continueGame.SetActive(false);
+            }
+            else
+            {
+                newGame.SetActive(false);
+                continueGame.SetActive(true);
+            }
         }
     }
 
@@ -139,11 +158,15 @@ public class MenuInicial : MonoBehaviour
         {
             videoPlayer.Pause();
         }
-
-       
     }
 
-    public void GameStart()
+    public void IniciarCaso()
+    {
+        GameManager.Instance.casos[idListaCasos].PistasDesbloqueadas = "";
+        SceneManager.LoadScene("Game");
+    }
+
+    public void Continuar()
     {
         SceneManager.LoadScene("Game");
     }

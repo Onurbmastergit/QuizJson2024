@@ -7,9 +7,10 @@ using System.Collections;
 public class ButtonManager : MonoBehaviour
 {
     public GameObject buttonPrefab; // Prefab do botão
+    public GameObject iconeConcluidoPrefab; // Prefab do icone de caso concluido
     public Transform buttonContainer; // Objeto que contém os botões
     private GameManager gameManager; // Referência ao GameManager
-    public JsonCasosReader jsonCasosReader; // Referência ao JsonCasosReader
+    JsonCasosReader jsonCasosReader; // Referência ao JsonCasosReader
     public int casosCarregados;
 
 
@@ -72,6 +73,17 @@ public class ButtonManager : MonoBehaviour
             // Adicionar um listener de clique ao botão
             int casoIndex = i; // Criar uma cópia da variável para usar no listener
             buttonGO.GetComponent<Button>().onClick.AddListener(() => ButtonClicked(casoIndex));
+
+            for (int j = 0; j < GameManager.Instance.casos.Count; j++)
+            {
+                if (GameManager.Instance.casos[j].CasoID == i && GameManager.Instance.casos[j].CasoResolvido == 1)
+                {
+                    buttonGO.GetComponentInChildren<RawImage>().enabled = true;
+                    break;
+                }
+
+                buttonGO.GetComponentInChildren<RawImage>().enabled = false;
+            }
         }
     }
 

@@ -84,6 +84,6 @@ public class JsonCasosReader : MonoBehaviour
             GameManager.Instance.listaIntro.Add(listaCasos[i].url_intro);
         }
 
-        GameManager.Instance.gameStarted = false;
+        GameManager.Instance.jsonReady++;
     }
 }

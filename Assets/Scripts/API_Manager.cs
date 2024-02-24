@@ -56,6 +56,8 @@ public class API_Manager : MonoBehaviour
             GameManager.Instance.perguntasRespondidas = pergunta.perguntas_respondidas;
             GameManager.Instance.perguntasAcertadas = pergunta.perguntas_acertadas;
         }
+
+        GameManager.Instance.jsonReady++;
     }
 
     IEnumerator GetRequestCaso(string uri)
@@ -85,6 +87,8 @@ public class API_Manager : MonoBehaviour
                 GameManager.Instance.casos.Add(novoCaso);
             }
         }
+
+        GameManager.Instance.jsonReady++;
     }
 
 }

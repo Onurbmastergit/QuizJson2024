@@ -33,7 +33,7 @@ public class ButtonAlternativa : MonoBehaviour
 
     public static ButtonAlternativa Spawn(Transform parent, int index, string text, bool setForCaso)
     {
-        var resourceButton = Resources.Load<ButtonAlternativa>("Prefab/Alternativa");
+        var resourceButton = Resources.Load<ButtonAlternativa>("Prefabs/Alternativa");
 
         var instance = Instantiate(resourceButton, parent);
 

@@ -49,5 +49,7 @@ public class JsonPerguntasReader : MonoBehaviour
             var test = pergunta.Value.ToObject<Question>();
             listaPerguntas.Add(test);
         }
+
+        GameManager.Instance.jsonReady++;
     }
 }

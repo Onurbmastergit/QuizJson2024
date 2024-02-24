@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public bool gameStarted = true;
+    public bool gameStarted;
+    public int jsonReady;
 
     // Informa ao sistema qual o caso selecionado pelo usuario
     public int casoSelecionado;
@@ -51,11 +52,19 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        while (gameStarted == true)
-        {
-            return;
-        }
+        StartCoroutine(VerificadorLeituraJson());
+    }
 
-        SceneManager.LoadScene("Menu");
+    IEnumerator VerificadorLeituraJson()
+    {
+        while (true)
+        {
+            if (GameManager.Instance.jsonReady == 4)
+            {
+                SceneManager.LoadScene("Menu");
+                break;
+            }
+            yield return new WaitForFixedUpdate();
+        }
     }
 }
