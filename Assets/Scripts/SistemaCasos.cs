@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Threading;
 using UnityEngine.SocialPlatforms.Impl;
+using Unity.VisualScripting;
 
 public class SistemaCasos : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class SistemaCasos : MonoBehaviour
     public TextMeshProUGUI casoDescricao;
     public TextMeshProUGUI casoNome1;
     public TextMeshProUGUI casoDescricao1;
+    public TextMeshProUGUI casoNome2;
     public TextMeshProUGUI comentarioCaso;
 
     public GameObject painelPistaRecolhida;
@@ -45,6 +47,7 @@ public class SistemaCasos : MonoBehaviour
         casoDescricao.text = casoAtual.pergunta;
         casoNome1.text = casoNome.text;
         casoDescricao1.text = casoDescricao.text;
+        casoNome2.text = casoNome.text;
         comentarioCaso.text = casoAtual.comentario;
 
         // Contador de numero de alternativas atraves do perguntas.json
@@ -75,6 +78,45 @@ public class SistemaCasos : MonoBehaviour
             }
         }
     }
+
+    // Timer da tela de Vitoria
+    float time;
+    public Image fill;
+    float timerMax;
+    bool canSkip;
+    public GameObject instrucaoVitoria;
+    public GameObject painelVitoria;
+    public GameObject painelComentario;
+    private void Update()
+    {
+        if (painelWin.activeSelf)
+        {
+            time += Time.deltaTime;
+            fill.fillAmount = time / timerMax;
+
+            if (time < 0)
+            {
+                time = 0;
+            }
+
+            if (time > timerMax)
+            {
+                canSkip = true;
+            }
+
+            if (canSkip)
+            {
+                instrucaoVitoria.SetActive(true);
+            }
+
+            if (canSkip && Input.anyKey)
+            {
+                painelVitoria.SetActive(false);
+                painelComentario.SetActive(true);
+            }
+        }
+    }
+
     public void ClicarBotaoAlternativa(int alternativa)
     {
         Thread.Sleep(250);
@@ -83,6 +125,8 @@ public class SistemaCasos : MonoBehaviour
         {
             painelRespostaCaso.SetActive(false);
             painelWin.SetActive(true);
+            time = 0;
+            timerMax = 30;
         }
         else
         {
