@@ -32,6 +32,9 @@ public class MenuInicial : MonoBehaviour
     public GameObject pauseButton;
     public GameObject backButton;
     public GameObject videoButton;
+    public GameObject MultimidiaButtons;
+
+    bool videoEnabled = false;
 
     private void Start()
     {
@@ -45,10 +48,14 @@ public class MenuInicial : MonoBehaviour
 
         Debug.Log("Quantidade de Casos no Json: "+GameManager.Instance.quantidadeCasosJson);
 
+        MultimidiaButtons.SetActive(videoEnabled);
+        painelVideo.GetComponent<RawImage>().enabled = videoEnabled;
+
         StartCoroutine(PreloadVideos());
     }
     void Update()
     {
+      
         videoPlayer.SetDirectAudioVolume(0, slider.value);
     }
 
@@ -76,16 +83,7 @@ public class MenuInicial : MonoBehaviour
             {
                 yield return www.SendWebRequest();
 
-                if (www.result == UnityWebRequest.Result.Success)
-                {
-                    // Vídeo pré-carregado com sucesso
-                    Debug.Log("Vídeo pré-carregado: " + url);
-                }
-                else
-                {
-                    // Trate o erro de pré-carregamento do vídeo
-                    Debug.LogError("Erro ao pré-carregar vídeo: " + www.error);
-                }
+                
             }
         }
     }
@@ -101,8 +99,13 @@ public class MenuInicial : MonoBehaviour
         if (jsonCasosReader.listaCasos[i].url_intro == "" || jsonCasosReader.listaCasos[i].url_intro == null)
         {
             videoButton.SetActive(false);
+            
         }
-        else videoButton.SetActive(true);
+        else
+        { 
+            videoButton.SetActive(true);
+        
+        }
     }
 
     public void OnSliderValueChanged()
@@ -129,11 +132,15 @@ public class MenuInicial : MonoBehaviour
         {
             yield return null;
         }
-
-        if (videoThumbnail.enabled == true)
+        if(painelVideo.GetComponent<RawImage>().enabled == true)
         {
             videoPlayer.Play();
+        }else
+        {
+            videoPlayer.Pause();
         }
+
+       
     }
 
     public void GameStart()
@@ -174,9 +181,20 @@ public class MenuInicial : MonoBehaviour
 
     public void ButtonVideoWindow()
     {
-        painelVideo.SetActive(!painelVideo.activeSelf);
+        videoEnabled = !videoEnabled;
+        MultimidiaButtons.SetActive(videoEnabled);
+        painelVideo.GetComponent<RawImage>().enabled = videoEnabled;
+        //painelVideo.SetActive(!painelVideo.activeSelf);
         backButton.SetActive(!backButton.activeSelf);
         descricaoCaso.SetActive(!descricaoCaso.activeSelf);
+        if(videoEnabled == false)
+        {
+            videoPlayer.Pause();
+        }
+        else if(videoEnabled == true)
+        {
+            videoPlayer.Play();
+        }
     }
 
     public void CloseIntro()
