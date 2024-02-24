@@ -11,7 +11,7 @@ public class SistemaPerguntas : MonoBehaviour
 {
     private JsonPerguntasReader jsonPerguntasReader;
 
-    public TextMeshProUGUI score;
+    public Image score;
 
     public TextMeshProUGUI perguntaText;
     public TextMeshProUGUI comentarioText;
@@ -117,12 +117,12 @@ public class SistemaPerguntas : MonoBehaviour
             Thread.Sleep(250);
             GameManager.Instance.perguntasAcertadas++;
             CaseManager.Instance.playerScore++;
-            score.text = score.text + "* ";
+            score.fillAmount = (float)(CaseManager.Instance.playerScore * 0.1);
 
             if (CaseManager.Instance.playerScore >= 10)
             {
                 CaseManager.Instance.playerScore = 0;
-                score.text = "";
+                score.fillAmount = 0;
                 perguntas.SetActive(false);
                 pista.SetActive(true);
                 CaseManager.Instance.totalPistas++;
