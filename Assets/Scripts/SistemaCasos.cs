@@ -31,8 +31,11 @@ public class SistemaCasos : MonoBehaviour
     public GameObject painelOver;
     public GameObject painelRespostaCaso;
     public GameObject respostasCaso;
+    public GameObject pistaImage;
+    public GameObject pistaText;
 
     int botaoCorreto;
+    bool enabledText = true;
 
     void Start()
     {
@@ -188,5 +191,11 @@ public class SistemaCasos : MonoBehaviour
     public void BackToMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+    public void EnableTextOrImage()
+    {
+        enabledText = !enabledText;
+        pistaText.SetActive(enabledText);
+        pistaImage.SetActive(!enabledText);
     }
 }

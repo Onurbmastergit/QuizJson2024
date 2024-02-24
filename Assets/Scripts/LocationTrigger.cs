@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Reflection;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Networking;
 using static JsonCasosReader;
 
 public enum locationNames
@@ -37,25 +39,27 @@ public class LocationTrigger : MonoBehaviour
 
     public TextMeshProUGUI pista;
     public TextMeshProUGUI local;
+    public GameObject imagePrefab; // Prefab para instanciar as imagens
+    public Transform container;
 
     List<string> nomeLocais = new List<string>()
     {
         "Financeiro",
-        "Ambulatório",
-        "Bloco Cirúrgico",
+        "AmbulatÃ³rio",
+        "Bloco Cirï¿½rgico",
         "Posto de Enfermagem",
-        "Laboratório",
+        "Laboratï¿½rio",
         "Oncologia",
-        "Recepção",
+        "Recepï¿½ï¿½o",
         "Pronto Socorro",
         "Lanchonete",
         "UTI",
         "Enfermaria",
         "Diretoria",
         "Radiologia",
-        "Farmácia",
+        "Farmï¿½cia",
         "Pediatria",
-        "Repouso Médico"
+        "Repouso Mï¿½dico"
     };
 
     void Start()
@@ -113,7 +117,7 @@ public class LocationTrigger : MonoBehaviour
         }
     }
 
-    public void PistaSelecionadaLT()
+  public void PistaSelecionadaLT()
     {
         int casoSelecionado = GameManager.Instance.casoSelecionado;
         locationNames localAtual = CaseManager.Instance.localAtual;
@@ -121,7 +125,77 @@ public class LocationTrigger : MonoBehaviour
         var casoAtual = jsonCasosReader.listaCasos[casoSelecionado];
 
         pista.text = casoAtual.pistas[(int)localAtual].text;
-
         local.text = nomeLocais[(int)localAtual];
+
+        // Limpe as imagens anteriores, se houver
+        foreach (Transform child in container)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // Acesse a lista de URLs de imagens do caso atual e obtenha todas as URLs de imagem correspondentes ao local atual
+        List<string> urlsImagens = new List<string>();
+        foreach (var url in casoAtual.pistas[(int)localAtual].image)
+        {
+            urlsImagens.Add(url.url);
+        }
+
+        // Carregue e exiba todas as imagens
+        foreach (var urlImagem in urlsImagens)
+        {
+            StartCoroutine(LoadImage(urlImagem));
+        }
+    }
+
+    IEnumerator LoadImage(string url)
+    {
+        // FaÃ§a o download da imagem usando UnityWebRequest
+        UnityWebRequest www = UnityWebRequestTexture.GetTexture(url);
+        yield return www.SendWebRequest();
+
+        // Verifique se houve algum erro durante o download
+        if (www.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError("Erro ao baixar imagem: " + www.error);
+        }
+        else
+        {
+            // Converta a resposta em textura
+            Texture2D texture = ((DownloadHandlerTexture)www.downloadHandler).texture;
+
+            // Crie uma nova instÃ¢ncia da imagem usando o prefab
+            GameObject imageObject = Instantiate(imagePrefab, container);
+
+            // Acesse o componente Image da instÃ¢ncia criada
+            Image imageComponent = imageObject.GetComponent<Image>();
+
+            // Redimensione a textura para o tamanho desejado
+            Texture2D resizedTexture = ResizeTexture(texture, 830, 739);
+
+            // Crie um sprite com a textura redimensionada
+            Sprite sprite = Sprite.Create(resizedTexture, new Rect(0, 0, resizedTexture.width, resizedTexture.height), Vector2.zero);
+
+            // Atribua o sprite ao componente Image
+            imageComponent.sprite = sprite;
+        }
+    }
+
+    Texture2D ResizeTexture(Texture2D source, int targetWidth, int targetHeight)
+    {
+        RenderTexture rt = RenderTexture.GetTemporary(targetWidth, targetHeight, 0, RenderTextureFormat.Default, RenderTextureReadWrite.Linear);
+
+        rt.filterMode = FilterMode.Bilinear;
+        RenderTexture.active = rt;
+        Graphics.Blit(source, rt);
+
+        Texture2D result = new Texture2D(targetWidth, targetHeight);
+        result.ReadPixels(new Rect(0, 0, targetWidth, targetHeight), 0, 0);
+        result.Apply();
+
+        RenderTexture.active = null;
+        RenderTexture.ReleaseTemporary(rt);
+
+        return result;
     }
 }
+
