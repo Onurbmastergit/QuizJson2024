@@ -46,20 +46,20 @@ public class LocationTrigger : MonoBehaviour
     {
         "Financeiro",
         "Ambulatório",
-        "Bloco Cir�rgico",
+        "Bloco Cirúrgico",
         "Posto de Enfermagem",
-        "Laborat�rio",
+        "Laboratório",
         "Oncologia",
-        "Recep��o",
+        "Recepção",
         "Pronto Socorro",
         "Lanchonete",
         "UTI",
         "Enfermaria",
         "Diretoria",
         "Radiologia",
-        "Farm�cia",
+        "Farmácia",
         "Pediatria",
-        "Repouso M�dico"
+        "Repouso Médico"
     };
 
     void Start()
