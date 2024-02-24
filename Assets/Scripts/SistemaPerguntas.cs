@@ -30,6 +30,8 @@ public class SistemaPerguntas : MonoBehaviour
     private int segundosAnteriores = 0;
     public TextMeshProUGUI timerText;
 
+    public Animator animatorCorreto;
+    public Animator animatorErrado;
     void Start()
     {
         jsonPerguntasReader = FindObjectOfType<JsonPerguntasReader>();
@@ -108,10 +110,10 @@ public class SistemaPerguntas : MonoBehaviour
     {
         GameManager.Instance.perguntasRespondidas++;
 
-        Thread.Sleep(250);
-
         if (alternativa == botaoCorreto)
         {
+            animatorCorreto.SetTrigger("click");
+
             Thread.Sleep(250);
             GameManager.Instance.perguntasAcertadas++;
             CaseManager.Instance.playerScore++;
@@ -144,6 +146,10 @@ public class SistemaPerguntas : MonoBehaviour
 
     void RespostaErrada()
     {
+        animatorErrado.SetTrigger("click");
+
+        Thread.Sleep(250);
+
         timer = -1;
         respostas.SetActive(false);
         comentario.SetActive(true);
