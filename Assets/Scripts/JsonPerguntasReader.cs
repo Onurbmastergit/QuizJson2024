@@ -26,22 +26,22 @@ public class JsonPerguntasReader : MonoBehaviour
 
     public List<Question> listaPerguntas = new List<Question>();
 
-    // Primeiro, tornar o Start, ou o método que for fazer a requisição como IEnumetor (assíncrono):
+    // Primeiro, tornar o Start, ou o mï¿½todo que for fazer a requisiï¿½ï¿½o como IEnumetor (assï¿½ncrono):
     IEnumerator Start()
     {
         // URL do arquivo JSON remoto
         string url = "https://conradosaud.com.br/outros/game_detetive/perguntas.json";
 
-        // Cria uma solicitação (request) de busca (GET) usando UnityWebRequest
+        // Cria uma solicitaï¿½ï¿½o (request) de busca (GET) usando UnityWebRequest
         UnityWebRequest request = UnityWebRequest.Get(url);
 
-        // Envia a solicitação e aguarda a resposta
+        // Envia a solicitaï¿½ï¿½o e aguarda a resposta
         yield return request.SendWebRequest();
 
-        // Obtém os dados JSON da resposta
+        // Obtï¿½m os dados JSON da resposta
         string jsonData = request.downloadHandler.text;
 
-        // Faça o que quiser com os dados JSON
+        // Faï¿½a o que quiser com os dados JSON
         JObject json = JObject.Parse(jsonData);
 
         foreach (var pergunta in json)
