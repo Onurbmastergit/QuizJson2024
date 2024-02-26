@@ -2,7 +2,7 @@
   "caso0": {
     "nome_do_caso": "Sombras no Corredor Hospitalar",
     "pergunta": "O detetive João está investigando um caso misterioso em um hospital. Uma pessoa foi encontrada morta em circunstâncias suspeitas. Quem é o principal suspeito?",
-    "url_intro": null,
+    "url_intro": "",
     "resposta_correta": "a",
     "comentario": "Parabéns! Você identificou corretamente o principal suspeito. Durante a investigação, descobriu-se que o Dr. Silva, médico de plantão, teve uma discussão com o paciente no ambulatório momentos antes do incidente. Além disso, uma transação financeira suspeita foi registrada na conta do paciente, levantando questões sobre possíveis motivos financeiros. As câmeras do bloco cirúrgico mostram a entrada de um paciente desconhecido na hora do incidente, adicionando um elemento de mistério ao caso. As outras opções não apresentaram evidências significativas.",
     "opcoes": [
@@ -180,7 +180,7 @@
   "caso1": {
     "nome_do_caso": "Caso 1",
     "pergunta": "Descrição do [Caso1] a ser resolvido [casos.json]",
-    "url_intro": null,
+    "url_intro": "",
     "resposta_correta": "a",
     "comentario": "Comentário sobre a Alternativa correta [Caso1] [casos.json]",
     "opcoes": [
@@ -358,7 +358,7 @@
   "caso2": {
     "nome_do_caso": "Desvendando o Mistério Hospitalar",
     "pergunta": "Qual é a origem do problema que levou o diretor do Hospital São Mistério a desmaiar em seu escritório?",
-    "url_intro": null,
+    "url_intro": "",
     "resposta_correta": "a",
     "comentario": "A situação financeira delicada do hospital pode ter levado a decisões drásticas, impactando a saúde do diretor.",
     "opcoes": [
@@ -533,7 +533,7 @@
   "caso3": {
     "nome_do_caso": "Caso 3",
     "pergunta": "Descrição do [Caso3] a ser resolvido [casos.json]",
-    "url_intro": null,
+    "url_intro": "",
     "resposta_correta": "a",
     "comentario": "Comentário sobre a Alternativa correta [Caso3] [casos.json]",
     "opcoes": [
@@ -711,7 +711,7 @@
   "caso4": {
     "nome_do_caso": "Caso 4",
     "pergunta": "Descrição do [Caso4] a ser resolvido [casos.json]",
-    "url_intro": null,
+    "url_intro": "",
     "resposta_correta": "a",
     "comentario": "Comentário sobre a Alternativa correta [Caso4] [casos.json]",
     "opcoes": [
@@ -889,7 +889,7 @@
   "caso5": {
     "nome_do_caso": "Caso 5",
     "pergunta": "Descrição do [Caso5] a ser resolvido [casos.json]",
-    "url_intro": null,
+    "url_intro": "",
     "resposta_correta": "a",
     "comentario": "Comentário sobre a Alternativa correta [Caso5] [casos.json]",
     "opcoes": [
@@ -1067,7 +1067,7 @@
   "caso6": {
     "nome_do_caso": "Caso 6",
     "pergunta": "Descrição do [Caso6] a ser resolvido [casos.json]",
-    "url_intro": null,
+    "url_intro": "",
     "resposta_correta": "a",
     "comentario": "Comentário sobre a Alternativa correta [Caso6] [casos.json]",
     "opcoes": [
