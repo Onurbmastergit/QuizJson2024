@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "id_usuario": 1,
+    "caso": 1,
+    "locais": "financeiro,ambulatorio,bloco_cirurgico,posto_de_enfermagem,laboratorio,oncologia,recepcao,pronto_socorro,lanchonete,uti,enfermaria,diretoria,radiologia,farmacia,pediatria,repouso_medico",
+    "concluido": 1
+  },
+  {
+    "id": 2,
+    "id_usuario": 1,
+    "caso": 2,
+    "locais": "financeiro,recepcao,farmacia,pediatria,repouso_medico,ambulatorio,diretoria,radiologia,enfermaria,posto_de_enfermagem,bloco_cirurgico",
+    "concluido": 0
+  },
+  {
+    "id": 3,
+    "id_usuario": 1,
+    "caso": 3,
+    "locais": "pronto_socorro,lanchonete,uti,laboratorio",
+    "concluido": 0
+  },
+  {
+    "id": 4,
+    "id_usuario": 1,
+    "caso": 4,
+    "locais": "",
+    "concluido": 1
+  },
+  {
+    "id": 5,
+    "id_usuario": 1,
+    "caso": 5,
+    "locais": "",
+    "concluido": 1
+  }
+]

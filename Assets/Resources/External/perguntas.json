@@ -1,0 +1,812 @@
+{
+  "pergunta0": {
+    "pergunta": "Qual é a capital do Brasil?",
+    "resposta_correta": "b",
+    "comentario": "Brasília é a capital do Brasil.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Rio de Janeiro"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Brasília"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "São Paulo"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Salvador"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Belo Horizonte"
+      }
+    ]
+  },
+  "pergunta1": {
+    "pergunta": "Quem escreveu 'Dom Quixote'?",
+    "resposta_correta": "c",
+    "comentario": "'Dom Quixote' foi escrito por Miguel de Cervantes.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "William Shakespeare"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Fyodor Dostoevsky"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Miguel de Cervantes"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Leo Tolstoy"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Charles Dickens"
+      }
+    ]
+  },
+  "pergunta2": {
+    "pergunta": "Qual é o maior planeta do Sistema Solar?",
+    "resposta_correta": "d",
+    "comentario": "Júpiter é o maior planeta do Sistema Solar.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Vênus"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Marte"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Saturno"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Júpiter"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Urano"
+      }
+    ]
+  },
+  "pergunta3": {
+    "pergunta": "Quem pintou a Mona Lisa?",
+    "resposta_correta": "e",
+    "comentario": "A Mona Lisa foi pintada por Leonardo da Vinci.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Vincent van Gogh"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Pablo Picasso"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Claude Monet"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Michelangelo"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Leonardo da Vinci"
+      }
+    ]
+  },
+  "pergunta4": {
+    "pergunta": "Qual é o maior mamífero terrestre?",
+    "resposta_correta": "a",
+    "comentario": "O elefante africano é o maior mamífero terrestre.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Elefante africano"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Rinoceronte"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Hipopótamo"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Girafa"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Leão"
+      }
+    ]
+  },
+  "pergunta5": {
+    "pergunta": "Em que ano foi assinada a Declaração de Independência dos Estados Unidos?",
+    "resposta_correta": "c",
+    "comentario": "A Declaração de Independência dos Estados Unidos foi assinada em 1776.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "1789"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "1800"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "1776"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "1825"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "1750"
+      }
+    ]
+  },
+  "pergunta6": {
+    "pergunta": "Qual é o maior oceano do mundo?",
+    "resposta_correta": "a",
+    "comentario": "O oceano Pacífico é o maior oceano do mundo.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Pacífico"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Atlântico"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Índico"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Antártico"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Ártico"
+      }
+    ]
+  },
+  "pergunta7": {
+    "pergunta": "Quem foi o primeiro presidente do Brasil?",
+    "resposta_correta": "b",
+    "comentario": "O marechal Deodoro da Fonseca foi o primeiro presidente do Brasil.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Getúlio Vargas"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Deodoro da Fonseca"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Juscelino Kubitschek"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Tancredo Neves"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Fernando Collor"
+      }
+    ]
+  },
+  "pergunta8": {
+    "pergunta": "Qual é o segundo elemento mais abundante na crosta terrestre?",
+    "resposta_correta": "c",
+    "comentario": "O silício é o segundo elemento mais abundante na crosta terrestre.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Oxigênio"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Alumínio"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Silício"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Ferro"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Cálcio"
+      }
+    ]
+  },
+  "pergunta9": {
+    "pergunta": "Qual é o maior deserto do mundo?",
+    "resposta_correta": "d",
+    "comentario": "O deserto da Antártida é o maior deserto do mundo.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Deserto do Saara"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Deserto de Gobi"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Deserto da Arábia"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Deserto da Antártida"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Deserto de Atacama"
+      }
+    ]
+  },
+  "pergunta10": {
+    "pergunta": "Quem foi o primeiro homem a pisar na Lua?",
+    "resposta_correta": "a",
+    "comentario": "Neil Armstrong foi o primeiro homem a pisar na Lua.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Neil Armstrong"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Buzz Aldrin"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Yuri Gagarin"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "John Glenn"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Michael Collins"
+      }
+    ]
+  },
+  "pergunta11": {
+    "pergunta": "Qual é a velocidade da luz no vácuo?",
+    "resposta_correta": "c",
+    "comentario": "A velocidade da luz no vácuo é de aproximadamente 299.792.458 metros por segundo.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "100.000.000 m/s"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "200.000.000 m/s"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "299.792.458 m/s"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "400.000.000 m/s"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "500.000.000 m/s"
+      }
+    ]
+  },
+  "pergunta12": {
+    "pergunta": "Qual é o segundo livro do Antigo Testamento?",
+    "resposta_correta": "b",
+    "comentario": "O segundo livro do Antigo Testamento é Êxodo.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Gênesis"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Êxodo"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Levítico"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Números"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Deuteronômio"
+      }
+    ]
+  },
+  "pergunta13": {
+    "pergunta": "Qual é a capital da França?",
+    "resposta_correta": "d",
+    "comentario": "Paris é a capital da França.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Londres"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Madrid"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Berlim"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Paris"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Roma"
+      }
+    ]
+  },
+  "pergunta14": {
+    "pergunta": "Quem foi o inventor do telefone?",
+    "resposta_correta": "a",
+    "comentario": "Alexander Graham Bell foi o inventor do telefone.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Alexander Graham Bell"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Thomas Edison"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Nikola Tesla"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Guglielmo Marconi"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Samuel Morse"
+      }
+    ]
+  },
+  "pergunta15": {
+    "pergunta": "Qual é o maior rio do mundo?",
+    "resposta_correta": "a",
+    "comentario": "O rio Amazonas é o maior rio do mundo em volume de água.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Amazonas"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Nilo"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Yangtzé"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Mississipi"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Danúbio"
+      }
+    ]
+  },
+  "pergunta16": {
+    "pergunta": "Quem foi o fundador do Facebook?",
+    "resposta_correta": "b",
+    "comentario": "Mark Zuckerberg foi o fundador do Facebook.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Jeff Bezos"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Mark Zuckerberg"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Elon Musk"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Bill Gates"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Steve Jobs"
+      }
+    ]
+  },
+  "pergunta17": {
+    "pergunta": "Quantos planetas fazem parte do Sistema Solar?",
+    "resposta_correta": "c",
+    "comentario": "O Sistema Solar tem oito planetas.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Sete"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Nove"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Oito"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Seis"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Dez"
+      }
+    ]
+  },
+  "pergunta18": {
+    "pergunta": "Quem foi o autor de 'Romeu e Julieta'?",
+    "resposta_correta": "a",
+    "comentario": "William Shakespeare foi o autor de 'Romeu e Julieta'.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "William Shakespeare"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Fyodor Dostoevsky"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Miguel de Cervantes"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Leo Tolstoy"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Charles Dickens"
+      }
+    ]
+  },
+  "pergunta19": {
+    "pergunta": "Qual é o metal mais abundante na crosta terrestre?",
+    "resposta_correta": "b",
+    "comentario": "O alumínio é o metal mais abundante na crosta terrestre.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Ferro"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Alumínio"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Cobre"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Ouro"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Prata"
+      }
+    ]
+  },
+  "pergunta20": {
+    "pergunta": "Qual é o maior deserto do mundo?",
+    "resposta_correta": "a",
+    "comentario": "O deserto da Antártida é o maior deserto do mundo.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Deserto da Antártida"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Deserto do Saara"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Deserto de Gobi"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Deserto da Arábia"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Deserto de Atacama"
+      }
+    ]
+  },
+  "pergunta21": {
+    "pergunta": "Quem foi o primeiro presidente dos Estados Unidos?",
+    "resposta_correta": "b",
+    "comentario": "George Washington foi o primeiro presidente dos Estados Unidos.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Thomas Jefferson"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "George Washington"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "John Adams"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "James Madison"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Abraham Lincoln"
+      }
+    ]
+  },
+  "pergunta22": {
+    "pergunta": "Qual é a montanha mais alta do mundo?",
+    "resposta_correta": "c",
+    "comentario": "O Monte Everest é a montanha mais alta do mundo.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Monte Kilimanjaro"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Monte Denali"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Monte Everest"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Monte Aconcágua"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Monte Elbrus"
+      }
+    ]
+  },
+  "pergunta23": {
+    "pergunta": "Qual é a velocidade da luz no vácuo?",
+    "resposta_correta": "c",
+    "comentario": "A velocidade da luz no vácuo é de aproximadamente 299.792.458 metros por segundo.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "100.000.000 m/s"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "200.000.000 m/s"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "299.792.458 m/s"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "400.000.000 m/s"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "500.000.000 m/s"
+      }
+    ]
+  },
+  "pergunta24": {
+    "pergunta": "Quem foi o fundador da Microsoft?",
+    "resposta_correta": "d",
+    "comentario": "Bill Gates foi o fundador da Microsoft.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Steve Jobs"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Mark Zuckerberg"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Elon Musk"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Bill Gates"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Jeff Bezos"
+      }
+    ]
+  },
+  "pergunta25": {
+    "pergunta": "Qual é o maior oceano do mundo?",
+    "resposta_correta": "a",
+    "comentario": "O oceano Pacífico é o maior oceano do mundo.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Pacífico"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Atlântico"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Índico"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Antártico"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Ártico"
+      }
+    ]
+  },
+  "pergunta26": {
+    "pergunta": "Quem foi o autor de 'O Pequeno Príncipe'?",
+    "resposta_correta": "b",
+    "comentario": "Antoine de Saint-Exupéry foi o autor de 'O Pequeno Príncipe'.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "J.K. Rowling"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Antoine de Saint-Exupéry"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "J.R.R. Tolkien"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "George Orwell"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "C.S. Lewis"
+      }
+    ]
+  },
+  "pergunta27": {
+    "pergunta": "Qual é a capital do Japão?",
+    "resposta_correta": "c",
+    "comentario": "Tóquio é a capital do Japão.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Seul"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Beijing"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Tóquio"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Bangkok"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Jacarta"
+      }
+    ]
+  },
+  "pergunta28": {
+    "pergunta": "Qual é o maior rio do mundo?",
+    "resposta_correta": "a",
+    "comentario": "O rio Amazonas é o maior rio do mundo em volume de água.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Amazonas"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Nilo"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Yangtzé"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Mississipi"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Danúbio"
+      }
+    ]
+  },
+  "pergunta29": {
+    "pergunta": "Quem foi o inventor do avião?",
+    "resposta_correta": "b",
+    "comentario": "Os irmãos Wright, Wilbur e Orville, são creditados como inventores do avião.",
+    "opcoes": [
+      {
+        "alternativa": "a",
+        "resposta": "Irmãos Wright"
+      },
+      {
+        "alternativa": "b",
+        "resposta": "Santos Dumont"
+      },
+      {
+        "alternativa": "c",
+        "resposta": "Alberto Santos-Dumont"
+      },
+      {
+        "alternativa": "d",
+        "resposta": "Charles Lindbergh"
+      },
+      {
+        "alternativa": "e",
+        "resposta": "Amelia Earhart"
+      }
+    ]
+  }
+}
