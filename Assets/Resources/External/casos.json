@@ -178,7 +178,7 @@
     ]
   },
   "caso1": {
-    "nome_do_caso": "Caso 3",
+    "nome_do_caso": "Caso 1",
     "pergunta": "Descrição do [Caso1] a ser resolvido [casos.json]",
     "url_intro": null,
     "resposta_correta": "a",
