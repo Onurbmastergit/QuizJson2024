@@ -29,8 +29,8 @@ public class API_Manager : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(GetRequestPergunta("https://conradosaud.com.br/outros/game_detetive/api/tabela=perguntas&id_usuario=1.json"));
-        StartCoroutine(GetRequestCaso("https://conradosaud.com.br/outros/game_detetive/api/tabela=casos&id_usuario=1.json"));
+        StartCoroutine(GetRequestPergunta("https://raw.githubusercontent.com/Onurbmastergit/QuizJson2024/Kevin/Assets/Resources/External/tabela%3Dperguntas%26id_usuario%3D1.json"));
+        StartCoroutine(GetRequestCaso("https://raw.githubusercontent.com/Onurbmastergit/QuizJson2024/Kevin/Assets/Resources/External/tabela%3Dcasos%26id_usuario%3D1.json"));
     }
 
     IEnumerator GetRequestPergunta(string uri)

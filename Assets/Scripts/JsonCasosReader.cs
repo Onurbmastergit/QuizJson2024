@@ -46,8 +46,11 @@ public class JsonCasosReader : MonoBehaviour
 
     IEnumerator Start()
     {
+        // URL do arquivo JSON remoto
+        string url = "https://raw.githubusercontent.com/Onurbmastergit/QuizJson2024/Kevin/Assets/Resources/External/casos.json";
+
         // Cria uma solicitação (request) de busca (GET) usando UnityWebRequest
-        UnityWebRequest request = UnityWebRequest.Get("https://conradosaud.com.br/outros/game_detetive/casos.json");
+        UnityWebRequest request = UnityWebRequest.Get(url);
         request.SetRequestHeader("Cache-Control", "no-cache");
 
         // Envia a solicitação e aguarda a resposta

@@ -30,7 +30,7 @@ public class JsonPerguntasReader : MonoBehaviour
     IEnumerator Start()
     {
         // URL do arquivo JSON remoto
-        string url = "https://conradosaud.com.br/outros/game_detetive/perguntas.json";
+        string url = "https://raw.githubusercontent.com/Onurbmastergit/QuizJson2024/Kevin/Assets/Resources/External/perguntas.json";
 
         // Cria uma solicita��o (request) de busca (GET) usando UnityWebRequest
         UnityWebRequest request = UnityWebRequest.Get(url);

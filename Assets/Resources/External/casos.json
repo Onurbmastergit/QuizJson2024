@@ -178,97 +178,180 @@
     ]
   },
   "caso1": {
-    "nome_do_caso": "Caso do Último Cheetos",
-    "pergunta": "Detetive Watari, sua missão é crucial durante o apocalipse zumbi. O grupo de sobreviventes está enfrentando uma crise interna, o último pacote de Cheetos do mundo desapareceu, ameaçando a harmonia do grupo. Seu objetivo é descobrir quem, entre os sobreviventes, comeu o último Cheetos sem compartilhar. Como resolverá esse mistério?",
-    "url_intro": "https://conradosaud.com.br/outros/game_detetive/intro.mp4",
-    "resposta_correta": "b",
-    "comentario": "Parabéns! Detetive Watari, você identificou o(a) culpado(a) que comeu o último pacote de Cheetos. Durante a investigação, descobriu-se que o(a) culpado(a) apresenta possíveis sinais do vírus 'chita', que gradualmente transforma as pessoas em furries. Outros sobreviventes também mostram suspeitas de 'chita', mas por motivos diferentes. Agora, o desafio é manter a paz no grupo durante o apocalipse zumbi.",
+    "nome_do_caso": "Caso 3",
+    "pergunta": "Descrição do [Caso1] a ser resolvido [casos.json]",
+    "url_intro": null,
+    "resposta_correta": "a",
+    "comentario": "Comentário sobre a Alternativa correta [Caso1] [casos.json]",
     "opcoes": [
       {
         "alternativa": "a",
-        "resposta": "Erik Chibeni, o engenheiro de comunicações"
+        "resposta": "[Caso1] Alternativa A [casos.json]"
       },
       {
         "alternativa": "b",
-        "resposta": "Tiago Diniz, o médico do grupo"
+        "resposta": "[Caso1] Alternativa B [casos.json]"
       },
       {
         "alternativa": "c",
-        "resposta": "João Silva, o estrategista e planejador"
+        "resposta": "[Caso1] Alternativa C [casos.json]"
       },
       {
         "alternativa": "d",
-        "resposta": "Tuchi Souza, a especialista em armas e defesa"
+        "resposta": "[Caso1] Alternativa D [casos.json]"
       },
       {
         "alternativa": "e",
-        "resposta": "Gabrielo Takara, o técnico em suprimentos e alimentos"
+        "resposta": "[Caso1] Alternativa E [casos.json]"
       }
     ],
     "pistas": [
       {
         "local": "financeiro",
-        "text": "No setor financeiro, durante o último ataque zumbi, Erik Chibeni estava ocupado consertando as barricadas, enquanto Tiago Diniz estava tratando dos feridos. Tuchi Souza e Gabrielo Takara estavam de prontidão para qualquer emergência."
+        "text": "Pista [Caso1] contida no Financeiro [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          },
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "ambulatorio",
-        "text": "No ambulatório, durante o ataque, João Silva estava coordenando a defesa, enquanto Tiago Diniz corria para ajudar no pronto-socorro. Gabrielo Takara estava no laboratório, preparando medicamentos. Ninguém menciona o culpado. Além disso, você ouve falar brevemente que Tuchi Souza, o(a) especialista em armas, tem pressão alta desde pequeno, mas não parece relevante para o caso."
+        "text": "Pista [Caso1] contida no Ambulatório [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "bloco_cirurgico",
-        "text": "Durante o ataque no bloco cirúrgico, Tuchi Souza estava garantindo a segurança da área, enquanto Erik Chibeni ajudava a evacuar os pacientes. Tiago Diniz estava fora da sala de cirurgia, mantendo a calma no corredor."
+        "text": "Pista [Caso1] contida no Bloco Cirúrgico [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "posto_de_enfermagem",
-        "text": "No posto de enfermagem, durante o ataque, Erik Chibeni e Gabrielo Takara estavam organizando suprimentos, enquanto Tuchi Souza e João Silva mantinham a ordem. Ninguém menciona o culpado."
+        "text": "Pista [Caso1] contida no Posto de Enfermagem [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "laboratorio",
-        "text": "No laboratório, Tiago Diniz estava analisando amostras para identificar possíveis vacinas, enquanto Tuchi Souza estava no pronto-socorro, pronto para defender a área. Erik Chibeni e João Silva trabalhavam juntos para encontrar uma solução."
+        "text": "Pista [Caso1] contida no Laboratório [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "oncologia",
-        "text": "Na oncologia, durante o ataque zumbi, Gabrielo Takara estava ajudando a mover os pacientes para áreas mais seguras, enquanto João Silva cuidava de um paciente especial. Ninguém menciona o culpado."
+        "text": "Pista [Caso1] contida na Oncologia [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "recepcao",
-        "text": "Na recepção, durante o ataque, Tuchi Souza estava garantindo a segurança na entrada, enquanto Erik Chibeni e Gabrielo Takara estavam auxiliando os feridos. Tiago Diniz estava no ambulatório, tratando dos casos mais graves."
+        "text": "Pista [Caso1] contida na Recepção [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "pronto_socorro",
-        "text": "No pronto socorro, durante o ataque zumbi, João Silva liderava a equipe médica, enquanto Tiago Diniz estava no laboratório, buscando soluções. Ninguém menciona o culpado."
+        "text": "Pista [Caso1] contida no Pronto Socorro [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "lanchonete",
-        "text": "Na lanchonete, durante o ataque, Erik Chibeni estava distribuindo provisões, enquanto Gabrielo Takara garantia que todos tivessem algo para comer. Tuchi Souza e Tiago Diniz estavam de prontidão para qualquer emergência."
+        "text": "Pista [Caso1] contida na Lanchonete [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "uti",
-        "text": "Na UTI, durante o ataque zumbi, Tuchi Souza estava garantindo a segurança dos pacientes mais críticos, enquanto João Silva estava no bloco cirúrgico, realizando procedimentos urgentes. Ninguém menciona o culpado."
+        "text": "Pista [Caso1] contida na UTI [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "enfermaria",
-        "text": "Na enfermaria, durante o ataque, Gabrielo Takara estava ajudando a organizar os leitos, enquanto Erik Chibeni estava no posto de enfermagem, mantendo a ordem. Tuchi Souza estava na direção, coordenando a resposta à emergência."
+        "text": "Pista [Caso1] contida na Enfermaria [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "diretoria",
-        "text": "Na diretoria, durante o ataque zumbi, Erik Chibeni estava tentando estabelecer comunicação, enquanto Tiago Diniz estava coordenando estratégias defensivas. João Silva estava na recepção, liderando a resistência. Ninguém menciona o culpado."
+        "text": "Pista [Caso1] contida na Diretoria [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "radiologia",
-        "text": "Na radiologia, durante o ataque, Tiago Diniz estava analisando radiografias, enquanto Tuchi Souza estava garantindo a segurança da área. João Silva e Gabrielo Takara estavam ajudando na evacuação de pacientes."
+        "text": "Pista [Caso1] contida na Radiologia [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "farmacia",
-        "text": "Na farmácia, durante o ataque zumbi, Gabrielo Takara estava organizando medicamentos, enquanto Tuchi Souza estava no pronto socorro, ajudando os feridos. Erik Chibeni e João Silva estavam garantindo a segurança na entrada. Ninguém menciona o culpado."
+        "text": "Pista [Caso1] contida na Farmácia [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "pediatria",
-        "text": "Na pediatria, durante o ataque, João Silva estava cuidando das crianças, enquanto Erik Chibeni estava no bloco cirúrgico, realizando procedimentos urgentes. Tuchi Souza estava no repouso médico, descansando para a próxima emergência. Ninguém menciona o culpado."
+        "text": "Pista [Caso1] contida na Pediatria [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       },
       {
         "local": "repouso_medico",
-        "text": "No repouso médico, durante o ataque zumbi, Tuchi Souza estava descansando para a próxima emergência, enquanto Gabrielo Takara estava na lanchonete, garantindo que todos tivessem algo para comer. Ninguém menciona o culpado."
+        "text": "Pista [Caso1] contida no Repouso Médico [casos.json]",
+        "image": [
+          {
+            "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
+          }
+        ]
       }
     ]
   },
@@ -348,7 +431,7 @@
       },
       {
         "local": "oncologia",
-        "text": "Pista [Caso2] contida na Oncologia [casos.json]",
+        "text": "Resultados de exames revelam anormalidades em amostras de pacientes recentes.",
         "image": [
           {
             "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
@@ -357,7 +440,7 @@
       },
       {
         "local": "recepcao",
-        "text": "Pista [Caso2] contida na Recepção [casos.json]",
+        "text": "Resultados de exames revelam anormalidades em amostras de pacientes recentes.",
         "image": [
           {
             "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
@@ -366,7 +449,7 @@
       },
       {
         "local": "pronto_socorro",
-        "text": "Pista [Caso2] contida no Pronto Socorro [casos.json]",
+        "text": "Resultados de exames revelam anormalidades em amostras de pacientes recentes.",
         "image": [
           {
             "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
@@ -375,7 +458,7 @@
       },
       {
         "local": "lanchonete",
-        "text": "Pista [Caso2] contida na Lanchonete [casos.json]",
+        "text": "Resultados de exames revelam anormalidades em amostras de pacientes recentes.",
         "image": [
           {
             "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
@@ -384,7 +467,7 @@
       },
       {
         "local": "uti",
-        "text": "Pista [Caso2] contida na UTI [casos.json]",
+        "text": "Resultados de exames revelam anormalidades em amostras de pacientes recentes.",
         "image": [
           {
             "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
@@ -393,7 +476,7 @@
       },
       {
         "local": "enfermaria",
-        "text": "Pista [Caso2] contida na Enfermaria [casos.json]",
+        "text": "Resultados de exames revelam anormalidades em amostras de pacientes recentes.",
         "image": [
           {
             "url": "https://as2.ftcdn.net/v2/jpg/03/86/76/69/1000_F_386766989_JXLrPnY4THDN20Jfa4C5gugyuyw9vHe5.jpg"
