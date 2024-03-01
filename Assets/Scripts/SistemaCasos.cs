@@ -148,7 +148,7 @@ public class SistemaCasos : MonoBehaviour
         painelPistaRecolhida.SetActive(true);
     }
 
-    public GameObject[] locais; // Adicione todos os seus GameObjects aqui no Editor Unity
+    public GameObject[] locais;
     public void DesbloquearPistas()
     {
         for (int i = 0; i < locais.Length; i++)

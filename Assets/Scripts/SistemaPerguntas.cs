@@ -108,6 +108,7 @@ public class SistemaPerguntas : MonoBehaviour
 
     public void ClicarBotaoAlternativa(int alternativa)
     {
+        // UPDATE acao = "game_detetive_perguntas" | perguntas_respondidas++ =================================================================================
         GameManager.Instance.perguntasRespondidas++;
 
         if (alternativa == botaoCorreto)
@@ -115,6 +116,7 @@ public class SistemaPerguntas : MonoBehaviour
             animatorCorreto.SetTrigger("click");
 
             Thread.Sleep(250);
+            // UPDATE acao = "game_detetive_perguntas" | perguntas_acertadas++ =================================================================================
             GameManager.Instance.perguntasAcertadas++;
             CaseManager.Instance.playerScore++;
             score.fillAmount = (float)(CaseManager.Instance.playerScore * 0.1);
@@ -129,10 +131,12 @@ public class SistemaPerguntas : MonoBehaviour
 
                 if (GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas == "")
                 {
+                    // UPDATE acao = "game_detetive_casos" | locais = CaseManager.Instance.localAtual  =================================================================================
                     GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas += $"{CaseManager.Instance.localAtual}";
                 }
                 else
                 {
+                    // UPDATE acao = "game_detetive_casos" | locais += $",{CaseManager.Instance.localAtual}"  =================================================================================
                     GameManager.Instance.casos[CaseManager.Instance.indexCasoID].PistasDesbloqueadas += $",{CaseManager.Instance.localAtual}";
                 }
 

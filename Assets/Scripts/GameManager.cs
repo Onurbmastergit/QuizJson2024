@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    public string id_usuario;
+
     public bool gameStarted;
     public int jsonReady;
 

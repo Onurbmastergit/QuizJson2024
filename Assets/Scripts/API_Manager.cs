@@ -29,13 +29,14 @@ public class API_Manager : MonoBehaviour
     public List<APICaso> apiCasos = new List<APICaso>();
 
     // Pegar o ID do usuário (use um para testes)
-    int id_usuario = 1;
+    string id_usuario = "1";
 
     void Start()
     {
         StartCoroutine(GetRequestPergunta("https://raw.githubusercontent.com/Onurbmastergit/QuizJson2024/Kevin/Assets/Resources/External/tabela%3Dperguntas%26id_usuario%3D1.json"));
         StartCoroutine(GetRequestCaso("https://raw.githubusercontent.com/Onurbmastergit/QuizJson2024/Kevin/Assets/Resources/External/tabela%3Dcasos%26id_usuario%3D1.json"));
 
+        GameManager.Instance.id_usuario = id_usuario;
         //StartCoroutine(GetRequestPergunta($"https://sandbox.edxp.com.br/acesso.php?acao=retorna-perguntas-estudante&estudante={id_usuario}"));
         //StartCoroutine(GetRequestCaso($"https://sandbox.edxp.com.br/acesso.php?acao=retorna-casos-estudante&estudante={id_usuario}"));
     }
@@ -63,6 +64,8 @@ public class API_Manager : MonoBehaviour
                 string perguntas_respondidas = "0";
                 string perguntas_acertadas = "0";
                 */
+
+                //StartCoroutine(GetRequestPergunta($"https://sandbox.edxp.com.br/acesso.php?acao=retorna-perguntas-estudante&estudante={id_usuario}"));
 
                 yield break;
             }

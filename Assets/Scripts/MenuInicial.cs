@@ -96,8 +96,6 @@ public class MenuInicial : MonoBehaviour
         Debug.Log($"Caso Selecionado: {i}");
         descricaoCasoText.text = jsonCasosReader.listaCasos[i].pergunta;
 
-        Debug.Log($"URL Intro: {jsonCasosReader.listaCasos[i].url_intro}");
-
         if (jsonCasosReader.listaCasos[i].url_intro == "" || jsonCasosReader.listaCasos[i].url_intro == null)
         {
             videoButton.SetActive(false);
@@ -110,19 +108,32 @@ public class MenuInicial : MonoBehaviour
         // Verifica se existe um save na fase selecionada
         for (int j = 0; j < GameManager.Instance.casos.Count; j++)
         {
-            if (GameManager.Instance.casos[j].CasoID != i) continue;
-
-            idListaCasos = j;
-
-            if (GameManager.Instance.casos[j].PistasDesbloqueadas == "" || GameManager.Instance.casos[j].PistasDesbloqueadas == null)
+            if (GameManager.Instance.casos[j].CasoID == i)
             {
-                newGame.SetActive(true);
-                continueGame.SetActive(false);
+                idListaCasos = j;
+
+                if (GameManager.Instance.casos[j].PistasDesbloqueadas == "" || GameManager.Instance.casos[j].PistasDesbloqueadas == null)
+                {
+                    newGame.SetActive(true);
+                    continueGame.SetActive(false);
+                }
+                else
+                {
+                    newGame.SetActive(false);
+                    continueGame.SetActive(true);
+                }
             }
             else
             {
-                newGame.SetActive(false);
-                continueGame.SetActive(true);
+                /* POST: =================================================================================
+                https://sandbox.edxp.com.br/acesso.php
+
+                string acao = "game_detetive_casos";
+                string id_usuario = GameManager.Instance.id_usuario;
+                string caso = j;
+                string locais = "";
+                string concluido = "0";
+                */
             }
         }
     }
@@ -142,7 +153,7 @@ public class MenuInicial : MonoBehaviour
 
     IEnumerator PlayVideoAndLoadScene()
     {
-        if (GameManager.Instance.listaIntro[GameManager.Instance.casoSelecionado] == null) yield break;
+        if (GameManager.Instance.listaIntro[GameManager.Instance.casoSelecionado] == null || GameManager.Instance.listaIntro[GameManager.Instance.casoSelecionado] == "") yield break;
 
         videoPlayer.url = GameManager.Instance.listaIntro[GameManager.Instance.casoSelecionado];
         videoPlayer.Prepare();
